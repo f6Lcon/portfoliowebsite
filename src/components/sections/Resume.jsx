@@ -98,6 +98,7 @@ function Resume() {
                     <ToolIcon name="Burp Suite" icon={<img src="/icons/burpsuite.png" alt="Burp Suite" className="w-8 h-8" />} />
                     <ToolIcon name="Metasploit" icon={<img src="/icons/metasploit.png" alt="Metasploit" className="w-8 h-8" />} />
                     <ToolIcon name="Wireshark" icon={<img src="/icons/wireshark.png" alt="Wireshark" className="w-8 h-8" />} />
+                    <ToolIcon name="Nmap" icon={<img src="/icons/nmap.png"alt="Nmap" className="w-8 h-8" />} />
                 </div>
             </div>
         </div>

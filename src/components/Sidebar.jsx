@@ -50,7 +50,7 @@ function Sidebar({ activeSection, setActiveSection }) {
       <div className={`flex flex-col items-center py-8 ${collapsed ? "px-2" : "px-6"}`}>
         <div className="relative">
           <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-purple-500">
-            <img src="/placeholder.svg?height=200&width=200" alt="Profile" className="w-full h-full object-cover" />
+            <img src="/profile.png" alt="Profile" className="w-full h-full object-cover" />
           </div>
           <div className="absolute bottom-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-zinc-900"></div>
         </div>
@@ -58,14 +58,14 @@ function Sidebar({ activeSection, setActiveSection }) {
         {!collapsed && (
           <>
             <h2 className="mt-4 text-lg font-bold">Dennis Muriithi</h2>
-            <p className="text-sm text-zinc-400">Programmer</p>
+            <p className="text-sm text-zinc-400">Backend Dev & Red Teamer</p>
 
             <div className="flex gap-2 mt-4">
               <a href="https://github.com/initials101" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com/in/initials101"
+                href="https://linkedin.com/in.initials101"
                 target="_blank"
                 rel="noreferrer"
                 className="text-zinc-400 hover:text-white"

@@ -3,41 +3,13 @@ import { Award, ExternalLink } from "lucide-react"
 function Certifications() {
   const certifications = [
     {
-      title: "React Advanced Concepts",
-      issuer: "Frontend Masters",
-      date: "2023",
-      credentialId: "FM-REACT-2023",
-      credentialURL: "#",
-      description: "Advanced course covering React hooks, context, performance optimization, and advanced patterns.",
-      image: "/placeholder.svg?height=300&width=500",
-    },
-    {
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "2022",
-      credentialId: "FCC-JSALGO-2022",
-      credentialURL: "#",
-      description: "Comprehensive course on JavaScript algorithms, data structures, and problem-solving techniques.",
-      image: "/placeholder.svg?height=300&width=500",
-    },
-    {
-      title: "UI/UX Design Fundamentals",
-      issuer: "Interaction Design Foundation",
-      date: "2021",
-      credentialId: "IDF-UIUX-2021",
-      credentialURL: "#",
-      description:
-        "Course covering user interface design principles, user experience, and design thinking methodologies.",
-      image: "/placeholder.svg?height=300&width=500",
-    },
-    {
-      title: "Responsive Web Design",
-      issuer: "freeCodeCamp",
-      date: "2020",
-      credentialId: "FCC-RWD-2020",
-      credentialURL: "#",
-      description: "Course on building responsive websites using HTML, CSS, and modern design principles.",
-      image: "/placeholder.svg?height=300&width=500",
+      title: "ALX Software Engineering",
+      issuer: "African Leadership Expirience",
+      date: "2025",
+      credentialId: "",
+      credentialURL: "https://savanna.alxafrica.com/certificates/ES93rHnCfM",
+      description: "Certified in Full-Stack Software Engineering through ALX’s intensive, hands-on program.",
+      image: "/alx.png?height=300&width=500",
     },
   ]
 

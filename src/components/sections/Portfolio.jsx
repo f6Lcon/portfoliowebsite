@@ -9,27 +9,27 @@ function Portfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured online store with cart, checkout, and payment integration.",
-      image: "/placeholder.svg?height=300&width=600",
+      title: "MEDREF",
+      description: "A full-stack medical referral and appointment system streamlining patient-hospital interactions and referrals.",
+      image: "/public/medref.png",
       category: "web",
       technologies: ["React", "Node.js", "MongoDB"],
-      demoLink: "#",
-      githubLink: "#",
+      demoLink: "https://medref-fy.vercel.app/",
+      githubLink: "https://github.com/initials101/medref",
     },
     {
-      title: "Task Management App",
+      title: "VMS",
       description: "A productivity app to help teams organize and track their projects efficiently.",
-      image: "/placeholder.svg?height=300&width=600",
-      category: "app",
-      technologies: ["React", "Firebase", "Redux"],
-      demoLink: "#",
-      githubLink: "#",
+      image: "/public/vms.png",
+      category: "web",
+      technologies: ["React", "Flask", "Redux"],
+      demoLink: "https://volunteers-management-system-frontend.vercel.app/",
+      githubLink: "https://github.com/initials101/Volunteers_Management_System-Frontend",
     },
     {
       title: "Portfolio Website",
       description: "A creative portfolio for a photographer showcasing their work with a minimal interface.",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/projects/portfolio.png",
       category: "web",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       demoLink: "#",
@@ -38,7 +38,7 @@ function Portfolio() {
     {
       title: "Weather Dashboard",
       description: "A weather application that displays current and forecasted weather data for any location.",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/projects/weather.png",
       category: "app",
       technologies: ["JavaScript", "Weather API", "Chart.js"],
       demoLink: "#",
@@ -47,7 +47,7 @@ function Portfolio() {
     {
       title: "Restaurant Website",
       description: "A responsive website for a restaurant with menu, reservation, and contact features.",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/projects/restaurant.png",
       category: "web",
       technologies: ["HTML", "CSS", "JavaScript"],
       demoLink: "#",
@@ -56,7 +56,7 @@ function Portfolio() {
     {
       title: "Fitness Tracker",
       description: "An application to track workouts, set goals, and monitor progress over time.",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/projects/fitness.png",
       category: "app",
       technologies: ["React Native", "Firebase", "Redux"],
       demoLink: "#",
@@ -101,7 +101,7 @@ function Portfolio() {
           <div key={index} className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg group">
             <div className="relative h-48 overflow-hidden">
               <img
-                src={project.image || "/placeholder.svg"}
+                src={project.image || "/placeholder.svg?height=300&width=600"}
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

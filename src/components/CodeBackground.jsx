@@ -132,7 +132,7 @@ function CodeBackground() {
         speed: Math.random() * 2 + 1,
         text: characters[Math.floor(Math.random() * characters.length)],
         size: Math.floor(Math.random() * 6) + 10, // Random font size between 10-16px
-        color: `rgba(${Math.random() > 0.8 ? "124, 58, 237" : "0, 255, 0"}, ${Math.random() * 0.5 + 0.1})`, // Purple or green with random opacity
+        color: `rgba(${Math.random() > 0.8 ? "124, 58, 237" : "0, 255, 0"}, ${Math.random() * 0.3 + 0.05})`, // More transparent: 0.05-0.35 opacity
         changeInterval: Math.random() * 200 + 100, // Change text every 100-300 frames
       })
     }
@@ -140,8 +140,8 @@ function CodeBackground() {
     // Animation loop
     let frameCount = 0
     const animate = () => {
-      // Semi-transparent black to create trail effect
-      ctx.fillStyle = "rgba(9, 9, 11, 0.05)"
+      // Semi-transparent black to create trail effect - more transparent
+      ctx.fillStyle = "rgba(9, 9, 11, 0.03)" // Reduced from 0.05 to 0.03
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       // Draw each column
@@ -158,7 +158,7 @@ function CodeBackground() {
           column.y = Math.random() * -100
           column.speed = Math.random() * 2 + 1
           column.size = Math.floor(Math.random() * 6) + 10
-          column.color = `rgba(${Math.random() > 0.8 ? "124, 58, 237" : "0, 255, 0"}, ${Math.random() * 0.5 + 0.1})`
+          column.color = `rgba(${Math.random() > 0.8 ? "124, 58, 237" : "0, 255, 0"}, ${Math.random() * 0.3 + 0.05})`
         }
 
         // Periodically change the text
@@ -178,7 +178,7 @@ function CodeBackground() {
     }
   }, [])
 
-  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full opacity-30" style={{ zIndex: 0 }} />
+  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full opacity-20" style={{ zIndex: 0 }} />
 }
 
 export default CodeBackground
