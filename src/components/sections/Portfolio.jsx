@@ -44,6 +44,15 @@ function Portfolio() {
       demoLink: "https://picknest.com/",
       githubLink: "https://github.com/initials101/picknest",
     },
+    {
+      title: "Portfolio Website",
+      description: "",
+      image: "/portfolio.png",
+      category: "app",
+      technologies: ["React", "TailwindCSS"],
+      demoLink: "https://portfoliowebsite-five-phi.vercel.app/",
+      githubLink: "https://github.com/initials101/portfoliowebsite",
+    },
   ]
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
