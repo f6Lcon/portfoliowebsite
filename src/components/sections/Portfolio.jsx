@@ -46,7 +46,7 @@ function Portfolio() {
     },
     {
       title: "Portfolio Website",
-      description: "",
+      description: "This is my portfolio website to showcase my talent and skilly Happy coding!!",
       image: "/portfolio.png",
       category: "app",
       technologies: ["React", "TailwindCSS"],
