@@ -3,28 +3,42 @@ import { Briefcase } from "lucide-react"
 function Experience() {
   const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2021 - Present",
+      title: "Penetration Tester",
+      company: "Onix-market",
+      period: "2023 - 2024",
       description:
         "Led the frontend development team in building a complex SaaS platform. Implemented modern React practices, improved performance by 40%, and mentored junior developers.",
       technologies: ["React", "Redux", "TypeScript", "Tailwind CSS"],
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Solutions LLC",
-      period: "2018 - 2021",
+      title: "Backend Developer",
+      company: "ALX Portfolio project",
+      period: "2024- 2024",
       description:
         "Developed responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality products on time.",
       technologies: ["React", "JavaScript", "SCSS", "REST API"],
     },
     {
-      title: "Web Developer Intern",
-      company: "StartUp Hub",
-      period: "2017 - 2018",
+      title: "Web Developer Attachee",
+      company: "BITSYSTEMS Ltd.",
+      period: "May 2024 - Agust 2024",
       description:
         "Assisted in developing website features and fixing bugs. Gained hands-on experience with modern web technologies and agile development methodologies.",
       technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
+    },
+    {
+      title: "Fullstack Developer",
+      company: "ALX ",
+      period: "Dec 2024 - Jan 2025",
+      description: "",
+      technologies: ["React", "ExpressJS", "NodeJS", "MongoDB"],
+    },
+    {
+      title: "Fullstack Developer",
+      company: "Karatina University",
+      period: "Nov 2024 - April 2025",
+      description: "",
+      technologies: ["React", "NodeJS", "ExpressJS", "MOngoDB"]
     },
   ]
 
