@@ -30,7 +30,7 @@ function Sidebar({ activeSection, setActiveSection }) {
     { id: "contact", label: "Contact", icon: Mail },
   ]
 
-  const skills = ["React", "JavaScript", "HTML/CSS", "Tailwind CSS", "Node.js", "Vite", "UI/UX"]
+  const skills = ["React", "JavaScript", "Tailwind CSS", "Node.js", "Burp", "Metasploit"]
 
   return (
     <div
