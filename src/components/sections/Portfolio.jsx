@@ -44,24 +44,6 @@ function Portfolio() {
       demoLink: "https://picknest.com/",
       githubLink: "https://github.com/initials101/picknest",
     },
-    {
-      title: "Restaurant Website",
-      description: "A responsive website for a restaurant with menu, reservation, and contact features.",
-      image: "/projects/restaurant.png",
-      category: "web",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      demoLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Fitness Tracker",
-      description: "An application to track workouts, set goals, and monitor progress over time.",
-      image: "/projects/fitness.png",
-      category: "app",
-      technologies: ["React Native", "Firebase", "Redux"],
-      demoLink: "#",
-      githubLink: "#",
-    },
   ]
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)

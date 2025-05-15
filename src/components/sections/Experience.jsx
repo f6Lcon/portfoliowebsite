@@ -7,39 +7,42 @@ function Experience() {
       company: "Onix-market",
       period: "2023 - 2024",
       description:
-        "Led the frontend development team in building a complex SaaS platform. Implemented modern React practices, improved performance by 40%, and mentored junior developers.",
-      technologies: ["React", "Redux", "TypeScript", "Tailwind CSS"],
+        "Performed in-depth security assessments of web applications and APIs, identified critical vulnerabilities, and delivered actionable remediation reports to development teams. Contributed to strengthening the security posture of the SaaS platform.",
+      technologies: ["Burp Suite", "OWASP ZAP", "Nmap", "Arch Linux"],
     },
     {
       title: "Backend Developer",
       company: "ALX Portfolio project",
-      period: "2024- 2024",
+      period: "2024 - 2024",
       description:
-        "Developed responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality products on time.",
-      technologies: ["React", "JavaScript", "SCSS", "REST API"],
+        "Designed and developed secure backend services for portfolio-level projects, integrating RESTful APIs and authentication systems. Focused on clean architecture, scalability, and performance optimization.",
+      technologies: ["Node.js", "Express", "MongoDB", "JWT"],
     },
     {
       title: "Web Developer Attachee",
       company: "BITSYSTEMS Ltd.",
-      period: "May 2024 - Agust 2024",
+      period: "May 2024 - August 2024",
       description:
-        "Assisted in developing website features and fixing bugs. Gained hands-on experience with modern web technologies and agile development methodologies.",
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
+        "Contributed to ongoing projects by implementing new features, debugging existing functionality, and collaborating with senior developers. Gained hands-on experience with agile workflows and real-world client interactions.",
+      technologies: ["HTML", "CSS", "PHP", "jQuery", "Codigniter"],
     },
     {
       title: "Fullstack Developer",
-      company: "ALX ",
+      company: "ALX",
       period: "Dec 2024 - Jan 2025",
-      description: "",
+      description:
+        "Built a fullstack web application as part of the ALX capstone project. Developed both the frontend and backend, implemented user authentication, and deployed the solution to a cloud environment.",
       technologies: ["React", "ExpressJS", "NodeJS", "MongoDB"],
     },
     {
       title: "Fullstack Developer",
       company: "Karatina University",
       period: "Nov 2024 - April 2025",
-      description: "",
-      technologies: ["React", "NodeJS", "ExpressJS", "MOngoDB"]
-    },
+      description:
+        "Developed a Medical Referral and Appointment System for the final year project. Engineered backend services, integrated hospital-patient workflows, and implemented secure appointment scheduling with real-time data handling.",
+      technologies: ["React", "NodeJS", "ExpressJS", "MongoDB"],
+    }
+    
   ]
 
   return (

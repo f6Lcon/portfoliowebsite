@@ -13,7 +13,7 @@ function Contact() {
             <Phone className="text-purple-400" size={20} />
           </div>
           <h3 className="font-bold mb-2">Phone</h3>
-          <p className="text-zinc-400">+1 (123) 456-7890</p>
+          <p className="text-zinc-400">+254112395869</p>
         </div>
 
         <div className="bg-zinc-900 rounded-xl p-6 text-center">
@@ -21,7 +21,7 @@ function Contact() {
             <Mail className="text-purple-400" size={20} />
           </div>
           <h3 className="font-bold mb-2">Email</h3>
-          <p className="text-zinc-400">muriithidennis340#.com</p>
+          <p className="text-zinc-400">muriithidennis340@.com</p>
         </div>
 
         <div className="bg-zinc-900 rounded-xl p-6 text-center">
