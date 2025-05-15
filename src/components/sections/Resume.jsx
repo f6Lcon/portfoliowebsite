@@ -34,7 +34,7 @@ function Resume() {
             <div>
                 <h3 className="text-2xl font-bold mb-4 border-b border-zinc-800 pb-2">About Me</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                    I'm Dennis Muriithi, a backend developer and red teamer with over 5 years of experience in building secure, scalable systems. I specialize in backend development using technologies like Node.js and MongoDB, and I bring a strong understanding of cybersecurity and penetration testing to every project I work on.
+                    I'm Dennis Muriithi, a backend developer and red teamer with over 3 years of experience in building secure, scalable systems. I specialize in backend development using technologies like Node.js and MongoDB, and I bring a strong understanding of cybersecurity and penetration testing to every project I work on.
 
                     My unique blend of backend engineering and offensive security expertise allows me to craft solutions that are not only efficient and maintainable but also hardened against real-world threats. I document my cybersecurity learning journey through technical blogs, focusing on ethical hacking, system exploitation, and secure coding practices.
                 </p>

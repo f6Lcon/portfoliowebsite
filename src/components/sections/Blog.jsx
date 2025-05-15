@@ -37,7 +37,7 @@ function Blog() {
             month: "long",
             day: "numeric",
           }),
-          author: "John Doe",
+          author: "Dennis Muriithi",
           category: "React",
           image: "/blog/react-performance.png",
           readTime: "5 min read",
