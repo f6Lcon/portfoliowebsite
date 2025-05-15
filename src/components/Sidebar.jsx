@@ -57,22 +57,22 @@ function Sidebar({ activeSection, setActiveSection }) {
 
         {!collapsed && (
           <>
-            <h2 className="mt-4 text-lg font-bold">John Doe</h2>
-            <p className="text-sm text-zinc-400">Frontend Developer</p>
+            <h2 className="mt-4 text-lg font-bold">Dennis Muriithi</h2>
+            <p className="text-sm text-zinc-400">Programmer</p>
 
             <div className="flex gap-2 mt-4">
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
+              <a href="https://github.com/initials101" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/initials101"
                 target="_blank"
                 rel="noreferrer"
                 className="text-zinc-400 hover:text-white"
               >
                 <Linkedin size={18} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
+              <a href="https://twitter.com/initials101" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
                 <Twitter size={18} />
               </a>
             </div>
@@ -86,7 +86,7 @@ function Sidebar({ activeSection, setActiveSection }) {
           className={`${
             collapsed ? "w-12 h-12 p-0 rounded-full" : "w-full"
           } bg-green-600 hover:bg-green-700 flex items-center justify-center gap-2`}
-          onClick={() => window.open("https://wa.me/1234567890", "_blank")}
+          onClick={() => window.open("https://wa.me/+254112395869", "_blank")}
         >
           <Phone size={collapsed ? 20 : 16} />
           {!collapsed && <span>WhatsApp Me</span>}
