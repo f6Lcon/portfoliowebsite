@@ -65,7 +65,7 @@ function Sidebar({ activeSection, setActiveSection }) {
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com/in.initials101"
+                href="https://linkedin.com/in/initials101"
                 target="_blank"
                 rel="noreferrer"
                 className="text-zinc-400 hover:text-white"
