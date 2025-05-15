@@ -88,22 +88,17 @@ function Resume() {
       </div>
 
       <div>
-        <h3 className="text-2xl font-bold mb-4 border-b border-zinc-800 pb-2">Languages</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-zinc-900 rounded-xl p-4 text-center">
-            <h4 className="font-bold">English</h4>
-            <p className="text-zinc-400">Native</p>
-          </div>
-
-          <div className="bg-zinc-900 rounded-xl p-4 text-center">
-            <h4 className="font-bold">Spanish</h4>
-            <p className="text-zinc-400">Fluent</p>
-          </div>
-
-          <div className="bg-zinc-900 rounded-xl p-4 text-center">
-            <h4 className="font-bold">French</h4>
-            <p className="text-zinc-400">Intermediate</p>
-          </div>
+        <h3 className="text-2xl font-bold mb-4 border-b border-zinc-800 pb-2">Languages and Tools</h3>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
+          <ToolIcon name="Python" icon={<i className="devicon-python-plain colored text-3xl"></i>} />
+          <ToolIcon name="JavaScript" icon={<i className="devicon-javascript-plain colored text-3xl"></i>} />
+          <ToolIcon name="Node.js" icon={<i className="devicon-nodejs-plain colored text-3xl"></i>} />
+          <ToolIcon name="React" icon={<i className="devicon-react-original colored text-3xl"></i>} />
+          <ToolIcon name="Tailwind CSS" icon={<i className="devicon-tailwindcss-plain colored text-3xl"></i>} />
+          <ToolIcon name="MongoDB" icon={<i className="devicon-mongodb-plain colored text-3xl"></i>} />
+          <ToolIcon name="Burp Suite" icon={<img src="/icons/burpsuite.png" alt="Burp Suite" className="w-8 h-8" />} />
+          <ToolIcon name="Metasploit" icon={<img src="/icons/metasploit.png" alt="Metasploit" className="w-8 h-8" />} />
+          <ToolIcon name="Wireshark" icon={<img src="/icons/wireshark.png" alt="Wireshark" className="w-8 h-8" />} />
         </div>
       </div>
     </div>
@@ -120,6 +115,15 @@ function SkillBar({ name, percentage }) {
       <div className="w-full bg-zinc-800 rounded-full h-2">
         <div className="bg-purple-600 h-2 rounded-full" style={{ width: `${percentage}%` }}></div>
       </div>
+    </div>
+  )
+}
+
+function ToolIcon({ name, icon }) {
+  return (
+    <div className="bg-zinc-900 rounded-xl p-4 flex flex-col items-center justify-center text-center">
+      <div className="mb-2">{icon}</div>
+      <h4 className="text-sm">{name}</h4>
     </div>
   )
 }

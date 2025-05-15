@@ -34,7 +34,9 @@ function Sidebar({ activeSection, setActiveSection }) {
 
   return (
     <div
-      className={`relative ${collapsed ? "w-20" : "w-72"} h-screen bg-zinc-900 border-r border-zinc-800 transition-all duration-300 flex flex-col`}
+      className={`relative ${
+        collapsed ? "w-20" : "w-72"
+      } h-full bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-2xl transition-all duration-300 flex flex-col mr-4 overflow-hidden shadow-xl`}
     >
       {/* Collapse toggle button */}
       <button
@@ -81,7 +83,9 @@ function Sidebar({ activeSection, setActiveSection }) {
       {/* WhatsApp contact button */}
       <div className={`px-4 mb-4 ${collapsed ? "flex justify-center" : ""}`}>
         <Button
-          className={`${collapsed ? "w-12 h-12 p-0 rounded-full" : "w-full"} bg-green-600 hover:bg-green-700 flex items-center justify-center gap-2`}
+          className={`${
+            collapsed ? "w-12 h-12 p-0 rounded-full" : "w-full"
+          } bg-green-600 hover:bg-green-700 flex items-center justify-center gap-2`}
           onClick={() => window.open("https://wa.me/1234567890", "_blank")}
         >
           <Phone size={collapsed ? 20 : 16} />
@@ -97,7 +101,9 @@ function Sidebar({ activeSection, setActiveSection }) {
             return (
               <li key={item.id}>
                 <button
-                  className={`w-full flex items-center ${collapsed ? "justify-center" : "justify-start"} gap-3 px-3 py-2.5 rounded-lg transition-colors ${
+                  className={`w-full flex items-center ${
+                    collapsed ? "justify-center" : "justify-start"
+                  } gap-3 px-3 py-2.5 rounded-lg transition-colors ${
                     activeSection === item.id
                       ? "bg-purple-600 text-white"
                       : "text-zinc-400 hover:bg-zinc-800 hover:text-white"

@@ -7,14 +7,16 @@ import Contact from "./sections/Contact"
 
 function Dashboard({ activeSection }) {
   return (
-    <div className="flex-1 overflow-y-auto bg-black">
-      <div className="max-w-5xl mx-auto px-6 py-8">
-        {activeSection === "resume" && <Resume />}
-        {activeSection === "experience" && <Experience />}
-        {activeSection === "certifications" && <Certifications />}
-        {activeSection === "blog" && <Blog />}
-        {activeSection === "portfolio" && <Portfolio />}
-        {activeSection === "contact" && <Contact />}
+    <div className="h-full overflow-hidden bg-zinc-900/80 backdrop-blur-sm rounded-2xl border border-zinc-800 shadow-xl">
+      <div className="h-full overflow-y-auto p-6">
+        <div className="max-w-5xl mx-auto py-4">
+          {activeSection === "resume" && <Resume />}
+          {activeSection === "experience" && <Experience />}
+          {activeSection === "certifications" && <Certifications />}
+          {activeSection === "blog" && <Blog />}
+          {activeSection === "portfolio" && <Portfolio />}
+          {activeSection === "contact" && <Contact />}
+        </div>
       </div>
     </div>
   )
