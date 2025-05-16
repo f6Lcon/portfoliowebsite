@@ -7,7 +7,7 @@ function Resume() {
             <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
                 <div>
                     <h1 className="text-3xl sm:text-4xl font-bold mb-2">Dennis Muriithi</h1>
-                    <h2 className="text-xl text-purple-400 mb-4">BAckend Developer & Red</h2>
+                    <h2 className="text-xl text-purple-400 mb-4">BAckend Developer & Red Teamer</h2>
 
                     <div className="flex flex-col gap-2 text-zinc-400">
                         <div className="flex items-center gap-2">
