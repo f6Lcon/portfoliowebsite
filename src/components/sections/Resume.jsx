@@ -1,13 +1,13 @@
+
 import { Download, Mail, MapPin, Phone } from "lucide-react"
-import { Button } from "../ui/button"
 
 function Resume() {
     return (
         <div className="space-y-8">
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
                 <div>
-                    <h1 className="text-4xl font-bold mb-2">Dennis Muriithi</h1>
-                    <h2 className="text-xl text-purple-400 mb-4">Backend Developer & Red Teamer</h2>
+                    <h1 className="text-3xl sm:text-4xl font-bold mb-2">Dennis Muriithi</h1>
+                    <h2 className="text-xl text-purple-400 mb-4">BAckend Developer & Red</h2>
 
                     <div className="flex flex-col gap-2 text-zinc-400">
                         <div className="flex items-center gap-2">
@@ -25,10 +25,14 @@ function Resume() {
                     </div>
                 </div>
 
-                <Button className="bg-purple-600 hover:bg-purple-700">
+                <a
+                    href="/resume.pdf"
+                    download="RESUME_DENNIS.pdf"
+                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 disabled:pointer-events-none bg-purple-600 text-white hover:bg-purple-700 px-4 py-2"
+                >
                     <Download size={16} className="mr-2" />
                     Download CV
-                </Button>
+                </a>
             </div>
 
             <div>
@@ -44,17 +48,17 @@ function Resume() {
                 <h3 className="text-2xl font-bold mb-4 border-b border-zinc-800 pb-2">Education</h3>
                 <div className="space-y-4">
                     <div className="bg-zinc-900 rounded-xl p-4">
-                        <div className="flex justify-between">
+                        <div className="flex flex-col sm:flex-row sm:justify-between">
                             <h4 className="font-bold">Bachelor of Science in Information Technology</h4>
-                            <span className="text-purple-400">2021 - 2025</span>
+                            <span className="text-purple-400">2021 - 20125</span>
                         </div>
                         <p className="text-zinc-400">Karatina University</p>
                     </div>
 
                     <div className="bg-zinc-900 rounded-xl p-4">
-                        <div className="flex justify-between">
+                        <div className="flex flex-col sm:flex-row sm:justify-between">
                             <h4 className="font-bold">Software Engineering</h4>
-                            <span className="text-purple-400">2023 - 2025</span>
+                            <span className="text-purple-400">2024 - 2025</span>
                         </div>
                         <p className="text-zinc-400">African Leadership Expirience (ALX)</p>
                     </div>
@@ -88,7 +92,7 @@ function Resume() {
 
             <div>
                 <h3 className="text-2xl font-bold mb-4 border-b border-zinc-800 pb-2">Languages and Tools</h3>
-                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
                     <ToolIcon name="Python" icon={<i className="devicon-python-plain colored text-3xl"></i>} />
                     <ToolIcon name="JavaScript" icon={<i className="devicon-javascript-plain colored text-3xl"></i>} />
                     <ToolIcon name="Node.js" icon={<i className="devicon-nodejs-plain colored text-3xl"></i>} />
@@ -98,7 +102,7 @@ function Resume() {
                     <ToolIcon name="Burp Suite" icon={<img src="/icons/burpsuite.png" alt="Burp Suite" className="w-8 h-8" />} />
                     <ToolIcon name="Metasploit" icon={<img src="/icons/metasploit.png" alt="Metasploit" className="w-8 h-8" />} />
                     <ToolIcon name="Wireshark" icon={<img src="/icons/wireshark.png" alt="Wireshark" className="w-8 h-8" />} />
-                    <ToolIcon name="Nmap" icon={<img src="/icons/nmap.png"alt="Nmap" className="w-8 h-8" />} />
+                    <ToolIcon name="nmap" icon={<img src="/icons/nmap.png" alt="nmap" className="w-8 h-8" />} />
                 </div>
             </div>
         </div>
@@ -121,9 +125,9 @@ function SkillBar({ name, percentage }) {
 
 function ToolIcon({ name, icon }) {
     return (
-        <div className="bg-zinc-900 rounded-xl p-4 flex flex-col items-center justify-center text-center">
+        <div className="bg-zinc-900 rounded-xl p-3 sm:p-4 flex flex-col items-center justify-center text-center">
             <div className="mb-2">{icon}</div>
-            <h4 className="text-sm">{name}</h4>
+            <h4 className="text-xs sm:text-sm">{name}</h4>
         </div>
     )
 }

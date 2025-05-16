@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -59,27 +60,27 @@ function Portfolio() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold mb-8">Portfolio</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6">Portfolio</h2>
 
       {/* Filter buttons */}
-      <div className="flex gap-2 mb-8">
+      <div className="flex flex-wrap gap-2 mb-6 sm:mb-8">
         <Button
           variant={filter === "all" ? "default" : "outline"}
-          className={`rounded-full ${filter === "all" ? "bg-purple-600 hover:bg-purple-700" : ""}`}
+          className={`rounded-full text-sm ${filter === "all" ? "bg-purple-600 hover:bg-purple-700" : ""}`}
           onClick={() => setFilter("all")}
         >
           All
         </Button>
         <Button
           variant={filter === "web" ? "default" : "outline"}
-          className={`rounded-full ${filter === "web" ? "bg-purple-600 hover:bg-purple-700" : ""}`}
+          className={`rounded-full text-sm ${filter === "web" ? "bg-purple-600 hover:bg-purple-700" : ""}`}
           onClick={() => setFilter("web")}
         >
           Web
         </Button>
         <Button
           variant={filter === "app" ? "default" : "outline"}
-          className={`rounded-full ${filter === "app" ? "bg-purple-600 hover:bg-purple-700" : ""}`}
+          className={`rounded-full text-sm ${filter === "app" ? "bg-purple-600 hover:bg-purple-700" : ""}`}
           onClick={() => setFilter("app")}
         >
           Apps
@@ -87,10 +88,10 @@ function Portfolio() {
       </div>
 
       {/* Projects grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {filteredProjects.map((project, index) => (
           <div key={index} className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg group">
-            <div className="relative h-48 overflow-hidden">
+            <div className="relative h-40 sm:h-48 overflow-hidden">
               <img
                 src={project.image || "/placeholder.svg?height=300&width=600"}
                 alt={project.title}
@@ -116,9 +117,9 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-zinc-400 mb-4 line-clamp-2">{project.description}</p>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-bold mb-2">{project.title}</h3>
+              <p className="text-zinc-400 mb-4 line-clamp-2 text-sm sm:text-base">{project.description}</p>
 
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, i) => (
