@@ -69,7 +69,7 @@ function Blog() {
         month: "long",
         day: "numeric",
       }),
-      author: "John Doe",
+      author: "Dennis Muriithi",
       readTime: `${Math.max(Math.ceil(newPost.content.length / 1000), 1)} min read`,
     }
     setBlogPosts([post, ...blogPosts])
