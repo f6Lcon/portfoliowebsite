@@ -99,6 +99,9 @@ function Resume() {
                     <ToolIcon name="React" icon={<i className="devicon-react-original colored text-3xl"></i>} />
                     <ToolIcon name="Tailwind CSS" icon={<i className="devicon-tailwindcss-plain colored text-3xl"></i>} />
                     <ToolIcon name="MongoDB" icon={<i className="devicon-mongodb-plain colored text-3xl"></i>} />
+                    <ToolIcon name="Vscode" icon={<i className="devicon-vscode-plain colored text-3xl"></i>} />
+                    <ToolIcon name="Git" icon={<i className="devicon-git-plain colored text-3xl"></i>} />
+                    <ToolIcon name="Github" icon={<i className="devicon-github-plain colored text-3xl"></i>} />
                     <ToolIcon name="Burp Suite" icon={<img src="/icons/burpsuite.png" alt="Burp Suite" className="w-8 h-8" />} />
                     <ToolIcon name="Metasploit" icon={<img src="/icons/metasploit.png" alt="Metasploit" className="w-8 h-8" />} />
                     <ToolIcon name="Wireshark" icon={<img src="/icons/wireshark.png" alt="Wireshark" className="w-8 h-8" />} />
