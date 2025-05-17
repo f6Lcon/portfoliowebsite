@@ -39,7 +39,7 @@ function Blog() {
           }),
           author: "Dennis Muriithi",
           category: "React",
-          image: "/blog/react-performance.png",
+          image: "/blog/nmap.png",
           readTime: "5 min read",
         },
       ]
