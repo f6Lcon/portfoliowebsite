@@ -71,8 +71,8 @@ function Sidebar({ activeSection, setActiveSection, closeSidebar }) {
 
         {!collapsed && (
           <>
-            <h2 className="mt-4 text-lg font-bold">John Doe</h2>
-            <p className="text-sm text-zinc-400">Frontend Developer</p>
+            <h2 className="mt-4 text-lg font-bold">Dennis Muriithi</h2>
+            <p className="text-sm text-zinc-400">Backend Dev & Red Teamer</p>
 
             <div className="flex gap-2 mt-4">
               <a href="https://github.com/initials101" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
@@ -103,7 +103,7 @@ function Sidebar({ activeSection, setActiveSection, closeSidebar }) {
           onClick={() => window.open("https://wa.me/+254112395869", "_blank")}
         >
           <Phone size={collapsed ? 20 : 16} />
-          {!collapsed && <span>WhatsApp Me</span>}
+          {!collapsed && <span>getInTouch</span>}
         </Button>
       </div>
 
