@@ -54,6 +54,15 @@ function Portfolio() {
       demoLink: "https://portfoliowebsite-five-phi.vercel.app/",
       githubLink: "https://github.com/initials101/portfoliowebsite",
     },
+    {
+      title: "Property Management System",
+      description: "A property management system to streamline the bulky and manual record keeping of tenants data and property management",
+      image: "/pms.png",
+      category: "app",
+      technologies: ["React", "Tailwindcss", "Express", "Nodejs", "MySQL"],
+      demoLink: "#",
+      githubLink: "https://github.com/initials101/propertymanagementsystem",
+    },
   ]
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
