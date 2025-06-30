@@ -75,7 +75,7 @@ function Sidebar({ activeSection, setActiveSection, closeSidebar }) {
             <p className="text-sm text-zinc-400">Backend Dev & Red Teamer</p>
 
             <div className="flex gap-2 mt-4">
-              <a href="https://github.com/initials101" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
+              <a href="https://github.com/f6Lcon" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
                 <Github size={18} />
               </a>
               <a
@@ -86,7 +86,7 @@ function Sidebar({ activeSection, setActiveSection, closeSidebar }) {
               >
                 <Linkedin size={18} />
               </a>
-              <a href="https://twitter.com/initils101" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
+              <a href="https://twitter.com/f61con" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white">
                 <Twitter size={18} />
               </a>
             </div>

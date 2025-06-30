@@ -8,21 +8,6 @@ function Resume() {
                 <div>
                     <h1 className="text-3xl sm:text-4xl font-bold mb-2">Dennis Muriithi</h1>
                     <h2 className="text-xl text-purple-400 mb-4">BAckend Developer & Red Teamer</h2>
-
-                    <div className="flex flex-col gap-2 text-zinc-400">
-                        <div className="flex items-center gap-2">
-                            <Mail size={16} />
-                            <span>muriithidennis340@gmail.com</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Phone size={16} />
-                            <span>+254112395869</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <MapPin size={16} />
-                            <span>Meru, Kenya</span>
-                        </div>
-                    </div>
                 </div>
 
                 <a
