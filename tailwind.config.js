@@ -5,16 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Ayu Green Theme Colors
-        "ayu-bg": "#0d1117",
-        "ayu-sidebar": "#161b22",
-        "ayu-panel": "#21262d",
-        "ayu-surface": "#30363d",
-        "ayu-border": "#21262d",
-        "ayu-text": "#c9d1d9",
-        "ayu-comment": "#8b949e",
-        "ayu-accent": "#5fd787",
-        "ayu-accent-hover": "#4ac76a",
+        // Professional Hacker Terminal Theme
+        "terminal-bg": "#000000",
+        "terminal-window": "#0a0a0a",
+        "terminal-header": "#1a1a1a",
+        "terminal-border": "#00ff00",
+        "terminal-green": "#00ff00",
+        "terminal-green-bright": "#00ff41",
+        "terminal-comment": "#008000",
+        "terminal-text": "#c0c0c0",
 
         // Keep original shadcn colors for compatibility
         border: "hsl(var(--border))",
@@ -57,7 +56,13 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        mono: ["Fira Code", "monospace"],
+        mono: ["Fira Code", "Source Code Pro", "Courier New", "monospace"],
+      },
+      animation: {
+        blink: "blink 1s infinite",
+        glitch: "glitch 0.3s infinite",
+        scanline: "scanline 3s linear infinite",
+        typing: "typing 2s steps(40, end)",
       },
     },
   },
