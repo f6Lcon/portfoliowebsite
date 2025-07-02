@@ -2,10 +2,10 @@ import React from "react"
 import { cn } from "../../lib/utils"
 
 const buttonVariants = {
-  default: "bg-purple-600 text-white hover:bg-purple-700",
-  outline: "bg-transparent border border-zinc-700 text-white hover:bg-zinc-800",
-  ghost: "bg-transparent hover:bg-zinc-800 text-white",
-  link: "bg-transparent underline-offset-4 hover:underline text-white p-0",
+  default: "bg-ayu-accent text-ayu-bg hover:bg-ayu-accent-hover",
+  outline: "bg-transparent border border-ayu-border text-ayu-text hover:bg-ayu-surface",
+  ghost: "bg-transparent hover:bg-ayu-surface text-ayu-text",
+  link: "bg-transparent underline-offset-4 hover:underline text-ayu-text p-0",
 }
 
 const Button = React.forwardRef(

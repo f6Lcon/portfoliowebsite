@@ -32,7 +32,7 @@ function App() {
   }, [])
 
   return (
-    <div className="relative flex flex-col h-screen bg-zinc-950 text-white p-2 sm:p-4 overflow-hidden">
+    <div className="relative flex flex-col h-screen bg-ayu-bg text-ayu-text p-2 sm:p-4 overflow-hidden">
       {/* Animated Background */}
       <CodeBackground />
 

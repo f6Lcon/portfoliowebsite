@@ -18,136 +18,154 @@ function CodeBackground() {
     setCanvasSize()
     window.addEventListener("resize", setCanvasSize)
 
-    // Cybersecurity and JavaScript related symbols and keywords
+    // Cybersecurity and programming related symbols and keywords
     const characters = [
-      // JavaScript syntax
-      "function",
-      "const",
-      "let",
-      "var",
-      "=>",
-      "return",
-      "async",
-      "await",
-      "import",
-      "export",
-      "class",
-      "extends",
-      "new",
-      "this",
-      "super",
-      "static",
-      "get",
-      "set",
-      "if",
-      "else",
-      "for",
-      "while",
-      "switch",
-      "case",
-      "break",
-      "continue",
-      "try",
-      "catch",
-      "finally",
-      "throw",
+      // Programming languages
+      "python",
+      "bash",
+      "powershell",
+      "javascript",
+      "sql",
+      "php",
+      "c++",
+      "ruby",
+      "perl",
 
       // Cybersecurity terms
-      "encryption",
-      "firewall",
-      "malware",
       "exploit",
-      "vulnerability",
       "payload",
+      "shellcode",
       "backdoor",
-      "cipher",
-      "hash",
-      "authentication",
-      "authorization",
-      "injection",
-      "XSS",
-      "CSRF",
-      "DoS",
-      "buffer overflow",
-      "zero-day",
-      "ransomware",
+      "rootkit",
+      "keylogger",
+      "botnet",
       "phishing",
-      "spoofing",
-      "honeypot",
+      "malware",
+      "ransomware",
+      "trojan",
+      "worm",
+      "virus",
+      "spyware",
+      "adware",
+      "firewall",
+      "ids",
+      "ips",
+      "siem",
+      "soc",
+      "apt",
+      "ttp",
+      "ioc",
+      "mitre",
+      "nist",
+      "owasp",
+      "cve",
+      "cvss",
+      "nmap",
+      "metasploit",
+      "burpsuite",
+      "wireshark",
+      "kali",
+      "parrot",
+      "blackarch",
+      "oscp",
+      "ceh",
+      "cissp",
+      "sans",
+      "giac",
 
-      // Symbols
+      // Network terms
+      "tcp",
+      "udp",
+      "http",
+      "https",
+      "ssl",
+      "tls",
+      "dns",
+      "dhcp",
+      "arp",
+      "icmp",
+      "snmp",
+      "ftp",
+      "ssh",
+      "telnet",
+      "smtp",
+      "pop3",
+      "imap",
+
+      // Symbols and operators
+      "&&",
+      "||",
+      ">>",
+      "<<",
+      "|",
+      "&",
+      "^",
+      "~",
+      "!",
+      "@",
+      "#",
+      "$",
+      "%",
+      "*",
+      "+",
+      "-",
+      "=",
+      "<",
+      ">",
+      "?",
+      ":",
+      ";",
       "{",
       "}",
       "[",
       "]",
       "(",
       ")",
-      "<",
-      ">",
-      "&&",
-      "||",
-      "===",
-      "!==",
-      "+=",
-      "-=",
-      "*=",
-      "/=",
-      "++",
-      "--",
-      "//",
-      "/*",
-      "*/",
-      "0x",
-      "0b",
-      "0o",
-      "#",
-      "$",
-      "@",
-      "~",
-      "|",
-      "&",
-      "^",
-      "%",
 
       // Binary and hex
-      "0",
-      "1",
-      "0x1F",
-      "0xFF",
-      "0b1010",
-      "0b0101",
-      "0xDEADBEEF",
-      "0xC0FFEE",
-      "0xBAADF00D",
+      "0x41414141",
+      "0xdeadbeef",
+      "0xcafebabe",
+      "0x90909090",
+      "\\x41\\x41\\x41\\x41",
+      "/bin/sh",
+      "/etc/passwd",
+      "/etc/shadow",
+      "cmd.exe",
+      "powershell.exe",
+      "nc -lvp",
+      "rm -rf",
+      "sudo su",
+      "chmod 777",
     ]
 
     // Create an array of falling text columns
     const columns = []
-    const columnCount = Math.floor(canvas.width / 20) // Adjust spacing between columns
+    const columnCount = Math.floor(canvas.width / 20)
 
     for (let i = 0; i < columnCount; i++) {
       columns.push({
         x: i * 20,
-        y: Math.random() * -1000, // Start at random positions above the canvas
+        y: Math.random() * -1000,
         speed: Math.random() * 2 + 1,
         text: characters[Math.floor(Math.random() * characters.length)],
-        size: Math.floor(Math.random() * 6) + 10, // Random font size between 10-16px
-        color: `rgba(${Math.random() > 0.8 ? "124, 58, 237" : "0, 255, 0"}, ${Math.random() * 0.3 + 0.05})`, // More transparent: 0.05-0.35 opacity
-        changeInterval: Math.random() * 200 + 100, // Change text every 100-300 frames
+        size: Math.floor(Math.random() * 6) + 10,
+        color: `rgba(${Math.random() > 0.7 ? "95, 215, 135" : "34, 139, 34"}, ${Math.random() * 0.3 + 0.05})`, // Ayu green colors
+        changeInterval: Math.random() * 200 + 100,
       })
     }
 
     // Animation loop
     let frameCount = 0
     const animate = () => {
-      // Semi-transparent black to create trail effect - more transparent
-      ctx.fillStyle = "rgba(9, 9, 11, 0.03)" // Reduced from 0.05 to 0.03
+      // Semi-transparent background to create trail effect
+      ctx.fillStyle = "rgba(13, 17, 23, 0.03)" // Ayu dark background
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       // Draw each column
       columns.forEach((column, index) => {
         ctx.fillStyle = column.color
-        ctx.font = `${column.size}px monospace`
+        ctx.font = `${column.size}px 'Fira Code', monospace`
         ctx.fillText(column.text, column.x, column.y)
 
         // Move column down
@@ -158,7 +176,7 @@ function CodeBackground() {
           column.y = Math.random() * -100
           column.speed = Math.random() * 2 + 1
           column.size = Math.floor(Math.random() * 6) + 10
-          column.color = `rgba(${Math.random() > 0.8 ? "124, 58, 237" : "0, 255, 0"}, ${Math.random() * 0.3 + 0.05})`
+          column.color = `rgba(${Math.random() > 0.7 ? "95, 215, 135" : "34, 139, 34"}, ${Math.random() * 0.3 + 0.05})`
         }
 
         // Periodically change the text
@@ -178,7 +196,7 @@ function CodeBackground() {
     }
   }, [])
 
-  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full opacity-20" style={{ zIndex: 0 }} />
+  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full opacity-15" style={{ zIndex: 0 }} />
 }
 
 export default CodeBackground
