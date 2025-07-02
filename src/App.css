@@ -1,23 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Import terminal-style fonts */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
-
-:root {
-  /* Professional Hacker Terminal Theme */
-  --terminal-bg: #000000;
-  --terminal-window: #0a0a0a;
-  --terminal-header: #1a1a1a;
-  --terminal-border: #00ff00;
-  --terminal-green: #00ff00;
-  --terminal-green-bright: #00ff41;
-  --terminal-comment: #008000;
-  --terminal-text: #c0c0c0;
-  --terminal-red: #ff0000;
-  --terminal-yellow: #ffff00;
-}
 
 * {
   margin: 0;
@@ -26,7 +8,7 @@
 }
 
 body {
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Code", "Courier New", monospace;
   background: #000;
   color: #00ff00;
   overflow: hidden;
