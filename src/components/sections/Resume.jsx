@@ -37,15 +37,15 @@ function Resume() {
         <div className="space-y-4">
           <div className="bg-ayu-surface rounded-xl p-4">
             <div className="flex flex-col sm:flex-row sm:justify-between">
-              <h4 className="font-bold">Bachelor of Science in Cybersecurity</h4>
-              <span className="text-ayu-accent">2018 - 2022</span>
+              <h4 className="font-bold">Bachelor of Science in Information Technology</h4>
+              <span className="text-ayu-accent">2021 - 2025</span>
             </div>
-            <p className="text-ayu-comment">University of Technology</p>
+            <p className="text-ayu-comment">Karatina University</p>
           </div>
 
           <div className="bg-ayu-surface rounded-xl p-4">
             <div className="flex flex-col sm:flex-row sm:justify-between">
-              <h4 className="font-bold">Advanced Penetration Testing Course</h4>
+              <h4 className="font-bold">Penetration Testing</h4>
               <span className="text-ayu-accent">2022 - 2023</span>
             </div>
             <p className="text-ayu-comment">Cybersecurity Institute</p>
@@ -134,7 +134,7 @@ function Resume() {
           <ToolIcon name="Python" icon={<i className="devicon-python-plain colored text-3xl"></i>} />
           <ToolIcon name="JavaScript" icon={<i className="devicon-javascript-plain colored text-3xl"></i>} />
           <ToolIcon name="Bash" icon={<i className="devicon-bash-plain text-3xl text-ayu-accent"></i>} />
-          <ToolIcon name="Kali Linux" icon={<i className="devicon-linux-plain text-3xl text-ayu-accent"></i>} />
+          <ToolIcon name="Arch Linux" icon={<i className="devicon-linux-plain text-3xl text-ayu-accent"></i>} />
           <ToolIcon name="Docker" icon={<i className="devicon-docker-plain colored text-3xl"></i>} />
           <ToolIcon name="Git" icon={<i className="devicon-git-plain colored text-3xl"></i>} />
           <ToolIcon name="Burp Suite" icon={<img src="/icons/burpsuite.png" alt="Burp Suite" className="w-8 h-8" />} />
