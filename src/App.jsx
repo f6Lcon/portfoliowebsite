@@ -37,7 +37,7 @@ function App() {
             <span className="control-btn green"></span>
           </div>
           <span className="terminal-title">
-            <span className="mobile-hidden">f6Lcon@archlinux:~$ ./portfolio --mode=professional</span>
+            <span className="mobile-hidden">f6Lcon@arch:~$ ./portfolio --mode=professional</span>
             <span className="mobile-only">f6Lcon@arch:~$</span>
           </span>
         </div>
@@ -80,7 +80,7 @@ function App() {
 /_-''    ''-_\\`}
               </pre>
               <div className="os-info">
-                <div className="os-name">Arch Linux</div>
+                <div className="os-name">Portfolio</div>
                 <div className="kernel-info">Linux 6.6.8-arch1</div>
               </div>
             </div>
@@ -109,7 +109,7 @@ function App() {
 
           {/* Command Prompt */}
           <div className="command-prompt">
-            <div className="prompt-line">f6Lcon@archlinux:~$ ls -la</div>
+            <div className="prompt-line">f6Lcon@arch:~$ ls -la</div>
           </div>
 
           {/* Navigation Commands */}
@@ -137,7 +137,7 @@ function App() {
             >
               <span className="cmd-icon">🏆</span>
               <div className="cmd-info">
-                <div className="cmd-name">./list_certs.py</div>
+                <div className="cmd-name">./list_certs.js</div>
                 <div className="cmd-desc"># certifications</div>
               </div>
             </button>
@@ -190,7 +190,7 @@ function App() {
 
             {/* Terminal Cursor */}
             <div className="terminal-cursor">
-              <span>f6Lcon@archlinux:~$ </span>
+              <span>f6Lcon@arch:~$ </span>
               <span className="cursor-blink">█</span>
             </div>
           </div>
@@ -218,16 +218,16 @@ function App() {
 function WhoAmI() {
   return (
     <div className="content-section">
-      <div className="command-output">f6Lcon@archlinux:~$ ./whoami.sh</div>
+      <div className="command-output">f6Lcon@arch:~$ ./whoami.sh</div>
       <div className="executing">Executing whoami.sh...</div>
 
       <div className="info-block">
         <div className="info-title">[INFO] User profile loaded successfully</div>
         <div className="user-info">
           <div>USER_ID: f6Lcon</div>
-          <div>HOSTNAME: archlinux</div>
+          <div>HOSTNAME: arch</div>
           <div>ROLE: Cybersecurity Specialist & Software Engineer</div>
-          <div>SPECIALIZATION: Penetration Testing & Full-Stack Development</div>
+          <div>SPECIALIZATION: Penetration Testing & Backend Development</div>
           <div>STATUS: Active Security Researcher</div>
           <div>OS: Arch Linux (btw I use Arch)</div>
         </div>
@@ -237,7 +237,7 @@ function WhoAmI() {
         <div className="info-title">[EXEC] cat about.txt</div>
         <div className="about-text">
           Passionate cybersecurity professional and software engineer with expertise in ethical hacking, penetration
-          testing, and full-stack development. Dedicated to identifying vulnerabilities and strengthening digital
+          testing, and backend development. Dedicated to identifying vulnerabilities and strengthening digital
           defenses through comprehensive security assessments. Experienced in web application security, network
           penetration testing, and modern software development practices. Running on Arch Linux for maximum
           customization and control.
@@ -265,16 +265,16 @@ function WhoAmI() {
           <div className="skill-category">
             <div className="category-title">SOFTWARE_DEVELOPMENT:</div>
             <div className="skill-item">
-              JavaScript_Development: <span className="skill-level">91%</span>
+              JavaScript_Development: <span className="skill-level">65%</span>
             </div>
             <div className="skill-item">
-              Python_Programming: <span className="skill-level">89%</span>
+              Python_Programming: <span className="skill-level">60%</span>
             </div>
             <div className="skill-item">
-              C_Programming: <span className="skill-level">82%</span>
+              C_Programming: <span className="skill-level">40%</span>
             </div>
             <div className="skill-item">
-              Bash_Scripting: <span className="skill-level">87%</span>
+              Bash_Scripting: <span className="skill-level">50%</span>
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@ function WhoAmI() {
             <div className="category-title">DEVELOPMENT_STACK:</div>
             <div className="tool-list">
               <div className="tool-item">• JavaScript (Node.js, React)</div>
-              <div className="tool-item">• Python (Django, Flask)</div>
+              <div className="tool-item">• Python (Django)</div>
               <div className="tool-item">• C (System Programming)</div>
               <div className="tool-item">• Bash (Automation Scripts)</div>
               <div className="tool-item">• Git Version Control</div>
@@ -314,13 +314,13 @@ function WhoAmI() {
 function Certifications() {
   return (
     <div className="content-section">
-      <div className="command-output">f6Lcon@archlinux:~$ ./list_certs.py</div>
+      <div className="command-output">f6Lcon@arch:~$ ./list_certs.js</div>
       <div className="executing">Loading certification database...</div>
 
       <div className="cert-item">
         <div className="cert-header">
           <span className="cert-name">🎓 ALX Software Engineering Program</span>
-          <span className="cert-status active">ACTIVE</span>
+          <span className="cert-status active">COMPLETED</span>
         </div>
         <div className="cert-details">
           <div>ISSUER: African Leadership Experience (ALX)</div>
@@ -394,7 +394,7 @@ function Certifications() {
       </div>
 
       <div className="info-block">
-        <div className="info-title">[EXEC] python3 cert_stats.py --summary</div>
+        <div className="info-title">[EXEC] python3 cert_stats.js --summary</div>
         <div className="cert-stats">
           <div className="stat-item">
             <span className="stat-label">TOTAL_CERTIFICATIONS:</span>
@@ -421,7 +421,7 @@ function Certifications() {
 function Projects() {
   return (
     <div className="content-section">
-      <div className="command-output">f6Lcon@archlinux:~$ ./show_projects.sh</div>
+      <div className="command-output">f6Lcon@arch:~$ ./show_projects.sh</div>
       <div className="executing">Loading project repository...</div>
 
       <div className="project-item">
