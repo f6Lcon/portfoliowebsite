@@ -34,7 +34,7 @@ function Contact() {
               </div>
               <div className="method-info">
                 <h4>Email</h4>
-                <p>contact@f6lcon.dev</p>
+                <p>muriithidennis340@gmail.com</p>
                 <span>Preferred method</span>
               </div>
             </div>
@@ -45,7 +45,7 @@ function Contact() {
               </div>
               <div className="method-info">
                 <h4>Phone</h4>
-                <p>+1 (555) 123-4567</p>
+                <p>+25412395869</p>
                 <span>Available 9 AM - 6 PM EST</span>
               </div>
             </div>
@@ -65,17 +65,17 @@ function Contact() {
           <div className="social-connect">
             <h4>Connect on Social</h4>
             <div className="social-links">
-              <a href="#" className="social-link">
+              <a href="https://github.com/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                 <Github size={20} />
-                <span>GitHub</span>
+                <span>GitHub - @f6Lcon</span>
               </a>
-              <a href="#" className="social-link">
+              <a href="https://linkedin.com/in/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                 <Linkedin size={20} />
-                <span>LinkedIn</span>
+                <span>LinkedIn - @f6Lcon</span>
               </a>
-              <a href="#" className="social-link">
+              <a href="https://hackerone.com/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                 <MessageCircle size={20} />
-                <span>Discord</span>
+                <span>HackerOne - @f6Lcon</span>
               </a>
             </div>
           </div>
@@ -149,7 +149,7 @@ function Contact() {
             <Mail size={24} />
             <h4>Email Me</h4>
             <p>For detailed discussions</p>
-            <a href="mailto:contact@f6lcon.dev" className="quick-btn">
+            <a href="mailto:muriithidennis340@gmail.com" className="quick-btn">
               Send Email
             </a>
           </div>
@@ -158,7 +158,7 @@ function Contact() {
             <MessageCircle size={24} />
             <h4>Schedule a Call</h4>
             <p>For immediate consultation</p>
-            <a href="#" className="quick-btn">
+            <a href="wa.me/254112395869" className="quick-btn">
               Book Meeting
             </a>
           </div>
@@ -167,7 +167,7 @@ function Contact() {
             <Github size={24} />
             <h4>View My Work</h4>
             <p>Check out my repositories</p>
-            <a href="#" className="quick-btn">
+            <a href="https://github.com/f6Lcon" target="_blank" rel="noreferrer" className="quick-btn">
               Visit GitHub
             </a>
           </div>

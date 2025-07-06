@@ -13,7 +13,6 @@ function Skills() {
   const programmingSkills = [
     { name: "JavaScript", level: 90 },
     { name: "Python", level: 88 },
-    { name: "C", level: 82 },
     { name: "Bash", level: 85 },
   ]
 
@@ -23,7 +22,7 @@ function Skills() {
     "Nmap",
     "Wireshark",
     "OWASP ZAP",
-    "Kali Linux",
+    "Arch Linux",
     "BlackArch",
     "Hashcat",
     "John the Ripper",
@@ -47,13 +46,13 @@ function Skills() {
     "Social Engineering",
   ]
 
-  const frameworks = ["Node.js", "Express.js", "Django", "Flask", "FastAPI", "Spring Boot", "Next.js", "React"]
+  const frameworks = ["Node.js", "Express.js", "Django", "React"]
 
   const platforms = [
-    { name: "HackerOne", type: "Bug Bounty", status: "Active Researcher" },
-    { name: "VulnHub", type: "Practice", status: "50+ Machines Completed" },
-    { name: "Hack The Box", type: "Labs", status: "Active Member" },
-    { name: "TryHackMe", type: "Training", status: "Top 10%" },
+    { name: "HackerOne", type: "Bug Bounty", status: "Active Researcher - @f6Lcon" },
+    { name: "VulnHub", type: "Practice", status: "50+ Machines - @f6Lcon" },
+    { name: "Hack The Box", type: "Labs", status: "Active Member - @f6Lcon" },
+    { name: "TryHackMe", type: "Training", status: "Top 10% - @f6Lcon" },
   ]
 
   return (
@@ -186,7 +185,7 @@ function Skills() {
         <div className="bounty-grid">
           <div className="bounty-card">
             <div className="bounty-icon">🎯</div>
-            <h4>HackerOne Profile</h4>
+            <h4>HackerOne Profile - @f6Lcon</h4>
             <p>Active bug bounty researcher with verified vulnerabilities</p>
             <div className="bounty-achievements">
               <span>• Multiple CVE discoveries</span>
@@ -196,7 +195,7 @@ function Skills() {
           </div>
           <div className="bounty-card">
             <div className="bounty-icon">🏆</div>
-            <h4>Practice Labs</h4>
+            <h4>Practice Labs - @f6Lcon</h4>
             <p>Continuous learning through hands-on security challenges</p>
             <div className="bounty-achievements">
               <span>• 50+ VulnHub machines completed</span>

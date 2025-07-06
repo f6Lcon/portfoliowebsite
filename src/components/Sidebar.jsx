@@ -56,7 +56,7 @@ function Sidebar({ activeSection, setActiveSection, sidebarOpen, setSidebarOpen 
         {/* Profile Section */}
         <div className="sidebar-profile">
           <div className="profile-image">
-            <img src="/profile.png" alt="Profile" />
+            <img src="/profile.png" alt="f6Lcon Profile" />
             <div className="status-indicator"></div>
           </div>
 
@@ -67,13 +67,13 @@ function Sidebar({ activeSection, setActiveSection, sidebarOpen, setSidebarOpen 
               <p className="profile-subtitle">Software Engineer</p>
 
               <div className="profile-social">
-                <a href="#" className="social-link">
+                <a href="https://github.com/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                   <Github size={18} />
                 </a>
-                <a href="#" className="social-link">
+                <a href="https://linkedin.com/in/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                   <Linkedin size={18} />
                 </a>
-                <a href="mailto:contact@f6lcon.dev" className="social-link">
+                <a href="mailto:muriithidennis340@gmail.com" className="social-link">
                   <Mail size={18} />
                 </a>
               </div>

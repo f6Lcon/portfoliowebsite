@@ -32,7 +32,7 @@ function About() {
           </div>
 
           <div className="hero-image">
-            <img src="/profile.png" alt="Profile" />
+            <img src="/profile.png" alt="f6Lcon Profile" />
           </div>
         </div>
       </div>
@@ -128,25 +128,25 @@ function About() {
           <div className="platform-card">
             <div className="platform-icon">🎯</div>
             <h4>HackerOne</h4>
-            <p>Bug Bounty Hunter</p>
+            <p>@f6Lcon - Bug Bounty Hunter</p>
             <span className="platform-status active">Active Researcher</span>
           </div>
           <div className="platform-card">
             <div className="platform-icon">📦</div>
             <h4>VulnHub</h4>
-            <p>Vulnerable VMs</p>
+            <p>@f6Lcon - Vulnerable VMs</p>
             <span className="platform-status completed">50+ Machines</span>
           </div>
           <div className="platform-card">
             <div className="platform-icon">🏴‍☠️</div>
             <h4>Hack The Box</h4>
-            <p>Penetration Testing Labs</p>
+            <p>@f6Lcon - Penetration Testing Labs</p>
             <span className="platform-status active">Active Member</span>
           </div>
           <div className="platform-card">
             <div className="platform-icon">🚀</div>
             <h4>TryHackMe</h4>
-            <p>Cybersecurity Training</p>
+            <p>@f6Lcon - Cybersecurity Training</p>
             <span className="platform-status completed">Top 10%</span>
           </div>
         </div>
