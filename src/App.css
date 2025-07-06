@@ -535,6 +535,165 @@ body {
   font-size: 0.9rem;
 }
 
+/* Platforms Section */
+.platforms-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.platforms-section h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.platform-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-3px);
+}
+
+.platform-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.platform-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.platform-info h4 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.platform-info p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.platform-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.platform-status.active {
+  background: rgba(95, 215, 0, 0.2);
+  color: var(--primary-color);
+}
+
+.platform-status.completed {
+  background: rgba(57, 186, 230, 0.2);
+  color: var(--secondary-color);
+}
+
+/* Core Skills */
+.core-skills {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.core-skills h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.core-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.core-skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Bug Bounty Stats */
+.bounty-stats {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.bounty-stats h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.bounty-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.bounty-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.bounty-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bounty-card h4 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bounty-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.bounty-achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.bounty-achievements span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 /* Timeline */
 .timeline {
   position: relative;
@@ -1532,6 +1691,14 @@ body {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .core-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bounty-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1560,6 +1727,10 @@ body {
   }
 
   .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platforms-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1650,5 +1821,18 @@ body {
 
   .project-content {
     padding: 1.5rem;
+  }
+
+  .platforms-section,
+  .core-skills,
+  .bounty-stats {
+    padding: 1.5rem;
+  }
+
+  .platform-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
   }
 }

@@ -15,7 +15,8 @@ function About() {
             <h2 className="hero-subtitle">Cybersecurity Specialist & Software Engineer</h2>
             <p className="hero-description">
               Passionate about ethical hacking, penetration testing, and building secure applications. Experienced in
-              full-stack development with a focus on cybersecurity and secure coding practices.
+              backend development with a focus on cybersecurity, bug bounty hunting, and hands-on security research
+              through various platforms.
             </p>
 
             <div className="hero-info">
@@ -31,7 +32,7 @@ function About() {
           </div>
 
           <div className="hero-image">
-            <img src="/placeholder.svg?height=300&width=300" alt="Profile" />
+            <img src="/profile.png" alt="Profile" />
           </div>
         </div>
       </div>
@@ -42,12 +43,13 @@ function About() {
           <h3>Background</h3>
           <p>
             I'm a dedicated cybersecurity professional and software engineer with expertise in ethical hacking,
-            penetration testing, and secure application development. My journey combines technical excellence with a
-            passion for protecting digital assets and building robust security solutions.
+            penetration testing, and secure backend development. My journey combines technical excellence with a passion
+            for protecting digital assets and building robust security solutions.
           </p>
           <p>
-            With experience in both offensive and defensive security, I help organizations identify vulnerabilities and
-            strengthen their security posture through comprehensive assessments and modern development practices.
+            With extensive experience in bug bounty hunting on HackerOne and hands-on practice through VulnHub machines,
+            HTB labs, and TryHackMe challenges, I help organizations identify vulnerabilities and strengthen their
+            security posture through comprehensive assessments and modern development practices.
           </p>
         </div>
 
@@ -64,15 +66,22 @@ function About() {
             <div className="service-item">
               <div className="service-icon">💻</div>
               <div>
-                <h4>Secure Development</h4>
-                <p>Building secure applications with modern frameworks</p>
+                <h4>Backend Development</h4>
+                <p>Building secure and scalable backend systems and APIs</p>
               </div>
             </div>
             <div className="service-item">
               <div className="service-icon">🔍</div>
               <div>
+                <h4>Bug Bounty Hunting</h4>
+                <p>Finding and reporting security vulnerabilities on HackerOne</p>
+              </div>
+            </div>
+            <div className="service-item">
+              <div className="service-icon">🎯</div>
+              <div>
                 <h4>Security Research</h4>
-                <p>Vulnerability research and security tool development</p>
+                <p>Hands-on practice through VulnHub, HTB, and TryHackMe platforms</p>
               </div>
             </div>
           </div>
@@ -108,6 +117,37 @@ function About() {
           <div className="stat-content">
             <h3>4+</h3>
             <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Practice Platforms */}
+      <div className="platforms-section">
+        <h3>Security Practice Platforms</h3>
+        <div className="platforms-grid">
+          <div className="platform-card">
+            <div className="platform-icon">🎯</div>
+            <h4>HackerOne</h4>
+            <p>Bug Bounty Hunter</p>
+            <span className="platform-status active">Active Researcher</span>
+          </div>
+          <div className="platform-card">
+            <div className="platform-icon">📦</div>
+            <h4>VulnHub</h4>
+            <p>Vulnerable VMs</p>
+            <span className="platform-status completed">50+ Machines</span>
+          </div>
+          <div className="platform-card">
+            <div className="platform-icon">🏴‍☠️</div>
+            <h4>Hack The Box</h4>
+            <p>Penetration Testing Labs</p>
+            <span className="platform-status active">Active Member</span>
+          </div>
+          <div className="platform-card">
+            <div className="platform-icon">🚀</div>
+            <h4>TryHackMe</h4>
+            <p>Cybersecurity Training</p>
+            <span className="platform-status completed">Top 10%</span>
           </div>
         </div>
       </div>

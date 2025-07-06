@@ -56,7 +56,7 @@ function Sidebar({ activeSection, setActiveSection, sidebarOpen, setSidebarOpen 
         {/* Profile Section */}
         <div className="sidebar-profile">
           <div className="profile-image">
-            <img src="/placeholder.svg?height=80&width=80" alt="Profile" />
+            <img src="/profile.png" alt="Profile" />
             <div className="status-indicator"></div>
           </div>
 
