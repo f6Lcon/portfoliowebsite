@@ -62,7 +62,7 @@ function Sidebar({ activeSection, setActiveSection, sidebarOpen, setSidebarOpen 
 
           {!collapsed && (
             <>
-              <h3 className="profile-name">f6Lcon</h3>
+              <h3 className="profile-name">Muriithi Dennis</h3>
               <p className="profile-title">Cybersecurity Specialist</p>
               <p className="profile-subtitle">Software Engineer</p>
 

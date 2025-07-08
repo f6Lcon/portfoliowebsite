@@ -10,7 +10,7 @@ function About() {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">f6Lcon</span>
+              Hi, I'm <span className="highlight">Muriithi Dennis</span>
             </h1>
             <h2 className="hero-subtitle">Cybersecurity Specialist & Software Engineer</h2>
             <p className="hero-description">
