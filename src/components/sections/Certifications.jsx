@@ -14,7 +14,7 @@ function Certifications() {
       description:
         "Comprehensive 12-month software engineering program covering full-stack development, system design, algorithms, and professional software development practices.",
       skills: ["Full-Stack Development", "System Design", "Algorithms", "Data Structures", "Software Architecture"],
-      status: "Active",
+      status: "Completed",
     },
     {
       title: "OSCP - Offensive Security Certified Professional",
@@ -26,7 +26,7 @@ function Certifications() {
       description:
         "24-hour hands-on penetration testing certification requiring practical exploitation of multiple systems in a controlled environment.",
       skills: ["Penetration Testing", "Exploitation", "Post-Exploitation", "Buffer Overflows", "Privilege Escalation"],
-      status: "Active",
+      status: "Inactive",
     },
     {
       title: "CEH - Certified Ethical Hacker",
@@ -50,7 +50,7 @@ function Certifications() {
       description:
         "Hands-on penetration testing certification focusing on practical skills and real-world attack scenarios against modern systems.",
       skills: ["Advanced Penetration Testing", "Network Security", "Web Application Testing", "Wireless Security"],
-      status: "Active",
+      status: "Inactive",
     },
   ]
 
@@ -86,7 +86,7 @@ function Certifications() {
         <div className="stat-item">
           <CheckCircle size={20} />
           <div>
-            <h3>4</h3>
+            <h3>3</h3>
             <p>Active Status</p>
           </div>
         </div>

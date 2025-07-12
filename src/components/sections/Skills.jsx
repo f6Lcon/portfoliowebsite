@@ -4,16 +4,16 @@ import { Code, Shield, Wrench, Award, Target, Bug } from "lucide-react"
 
 function Skills() {
   const coreSkills = [
-    { name: "Backend Development", level: 92 },
+    { name: "Backend Development", level: 60 },
     { name: "Penetration Testing", level: 90 },
     { name: "Cybersecurity", level: 95 },
     { name: "Bug Bounty Hunting", level: 88 },
   ]
 
   const programmingSkills = [
-    { name: "JavaScript", level: 90 },
-    { name: "Python", level: 88 },
-    { name: "Bash", level: 85 },
+    { name: "JavaScript", level: 50 },
+    { name: "Python", level: 40 },
+    { name: "Bash", level: 60 },
   ]
 
   const securityTools = [

@@ -10,11 +10,11 @@ function About() {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Muriithi Dennis</span>
+              Hi, I'm <span className="highlight">Dennis</span>
             </h1>
-            <h2 className="hero-subtitle">Cybersecurity Specialist & Software Engineer</h2>
+            <h2 className="hero-subtitle">Cybersecurity Engineer & Backend Developer</h2>
             <p className="hero-description">
-              Passionate about ethical hacking, penetration testing, and building secure applications. Experienced in
+              I am passionate about ethical hacking, penetration testing, and building secure applications. Experienced in
               backend development with a focus on cybersecurity, bug bounty hunting, and hands-on security research
               through various platforms.
             </p>
@@ -42,7 +42,7 @@ function About() {
         <div className="about-card">
           <h3>Background</h3>
           <p>
-            I'm a dedicated cybersecurity professional and software engineer with expertise in ethical hacking,
+            I'm a dedicated cybersecurity professional and backend developer with expertise in ethical hacking,
             penetration testing, and secure backend development. My journey combines technical excellence with a passion
             for protecting digital assets and building robust security solutions.
           </p>

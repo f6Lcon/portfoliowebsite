@@ -4,77 +4,24 @@ import { ExternalLink, Github, Calendar, Code, Shield, Globe } from "lucide-reac
 
 function Projects() {
   const projects = [
-    {
-      title: "Security Monitoring Dashboard",
-      description:
-        "Real-time security monitoring dashboard with threat intelligence integration and automated incident response capabilities.",
-      image: "/placeholder.svg?height=200&width=400",
-      category: "Security",
-      technologies: ["JavaScript", "Python", "React", "Node.js", "MongoDB"],
-      features: [
-        "Real-time threat monitoring",
-        "Automated incident response",
-        "Threat intelligence integration",
-        "Custom alert system",
-      ],
-      demoUrl: "#",
-      githubUrl: "#",
-      status: "Completed",
-      date: "2023",
-    },
-    {
-      title: "Advanced Web Scanner",
-      description:
-        "Custom vulnerability scanner for web applications with advanced detection capabilities and comprehensive reporting features.",
-      image: "/placeholder.svg?height=200&width=400",
-      category: "Security",
-      technologies: ["Python", "C", "Bash", "SQLite"],
-      features: [
-        "Advanced vulnerability detection",
-        "Custom payload generation",
-        "Comprehensive reporting",
-        "Multi-threaded scanning",
-      ],
-      demoUrl: "#",
-      githubUrl: "#",
-      status: "Completed",
-      date: "2023",
-    },
-    {
-      title: "Network Enumeration Suite",
-      description:
-        "Comprehensive network discovery and enumeration toolkit for security professionals with automated reporting and analysis.",
-      image: "/placeholder.svg?height=200&width=400",
-      category: "Security",
-      technologies: ["C", "Python", "Bash", "Nmap"],
-      features: [
-        "Network discovery automation",
-        "Service enumeration",
-        "Vulnerability assessment",
-        "Automated reporting",
-      ],
-      demoUrl: "#",
-      githubUrl: "#",
-      status: "Completed",
-      date: "2022",
-    },
+
     {
       title: "Secure E-Commerce Platform",
       description:
         "Full-stack e-commerce platform built with security-first approach, implementing OWASP security standards and best practices.",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/picknest.png",
       category: "Development",
-      technologies: ["JavaScript", "React", "Node.js", "PostgreSQL"],
+      technologies: ["JavaScript", "React", "Node.js", "Express.Js", "MongoDB"],
       features: [
         "Secure authentication system",
         "Payment gateway integration",
         "OWASP compliance",
         "Real-time inventory management",
       ],
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://picknest.com/",
+      githubUrl: "https://github.com/initials101/picknest",
       status: "Completed",
-      date: "2023",
+      date: "2024",
     },
     {
       title: "Incident Response Automation",
@@ -95,17 +42,33 @@ function Projects() {
       date: "2024",
     },
     {
-      title: "Secure API Gateway",
+      title: "Lipa na mpesa Secure API Gateway",
       description:
         "High-performance API gateway with built-in security features including rate limiting, authentication, and threat protection.",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/mpesa.png",
       category: "Development",
-      technologies: ["C", "Python", "Redis", "Nginx"],
+      technologies: ["Node.Js", "Javascript", "Redis", "MongoDB", "Express.js", "Postman"],
       features: ["Rate limiting & throttling", "JWT authentication", "API threat protection", "Load balancing"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/f6Lcon/mpesaAPI",
       status: "Completed",
       date: "2023",
+    },
+    {
+      title: "MEDREF",
+      description: "A full-stack medical referral and appointment system streamlining patient-hospital interactions and referrals.",
+      image: "/medref.png",
+      category: "Deveopment",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      features: [
+        "Automated Referrals",
+        "Automated Appointments",
+        "Automated notifictions and reminders"
+      ],
+      demoUrl: "https://medref-fy.vercel.app/",
+      githubUrl: "https://github.com/f6Lcon/medref",
+      status: "Completed",
+      Date: "2025"
     },
   ]
 
@@ -145,7 +108,7 @@ function Projects() {
         <div className="stat-card">
           <Code size={24} />
           <div>
-            <h3>6</h3>
+            <h3>4</h3>
             <p>Total Projects</p>
           </div>
         </div>
@@ -159,7 +122,7 @@ function Projects() {
         <div className="stat-card">
           <Globe size={24} />
           <div>
-            <h3>2</h3>
+            <h3>10+</h3>
             <p>Web Applications</p>
           </div>
         </div>

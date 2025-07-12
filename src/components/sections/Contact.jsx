@@ -71,7 +71,7 @@ function Contact() {
               </a>
               <a href="https://linkedin.com/in/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                 <Linkedin size={20} />
-                <span>LinkedIn - @f6Lcon</span>
+                <span>LinkedIn - @initials101</span>
               </a>
               <a href="https://hackerone.com/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                 <MessageCircle size={20} />

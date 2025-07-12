@@ -63,14 +63,14 @@ function Sidebar({ activeSection, setActiveSection, sidebarOpen, setSidebarOpen 
           {!collapsed && (
             <>
               <h3 className="profile-name">Muriithi Dennis</h3>
-              <p className="profile-title">Cybersecurity Specialist</p>
-              <p className="profile-subtitle">Software Engineer</p>
+              <p className="profile-title">Cybersecurity Engineer</p>
+              <p className="profile-subtitle">Backend Developer</p>
 
               <div className="profile-social">
                 <a href="https://github.com/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
                   <Github size={18} />
                 </a>
-                <a href="https://linkedin.com/in/f6Lcon" target="_blank" rel="noreferrer" className="social-link">
+                <a href="https://linkedin.com/in/initials101" target="_blank" rel="noreferrer" className="social-link">
                   <Linkedin size={18} />
                 </a>
                 <a href="mailto:muriithidennis340@gmail.com" className="social-link">

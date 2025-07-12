@@ -5,25 +5,10 @@ import { Briefcase, Calendar } from "lucide-react"
 function Experience() {
   const experiences = [
     {
-      title: "Senior Cybersecurity Specialist",
-      company: "SecureTech Solutions",
-      period: "2022 - Present",
-      location: "Remote",
-      description:
-        "Lead penetration testing engagements and security assessments for enterprise clients. Developed custom security tools and frameworks for automated vulnerability detection.",
-      achievements: [
-        "Led 30+ penetration testing engagements",
-        "Developed automated vulnerability scanning tools",
-        "Reduced client security incidents by 60%",
-        "Mentored junior security analysts",
-      ],
-      technologies: ["Python", "JavaScript", "Burp Suite", "Metasploit", "Kali Linux"],
-    },
-    {
       title: "Software Engineer",
-      company: "TechCorp Inc.",
-      period: "2021 - 2022",
-      location: "San Francisco, CA",
+      company: "BitSystems Ltd.",
+      period: "2024",
+      location: "Nakuru, Kenya",
       description:
         "Developed secure web applications and implemented security best practices in the development lifecycle. Collaborated with security teams to ensure application security compliance.",
       achievements: [
@@ -32,13 +17,13 @@ function Experience() {
         "Reduced security vulnerabilities by 40%",
         "Led secure code review processes",
       ],
-      technologies: ["JavaScript", "Python", "C", "React", "Node.js"],
+      technologies: ["JavaScript", "PHP", "Codigniter"],
     },
     {
       title: "Junior Security Analyst",
       company: "CyberGuard Systems",
-      period: "2020 - 2021",
-      location: "New York, NY",
+      period: "2022 - 2023",
+      location: "Remote",
       description:
         "Performed vulnerability assessments and security monitoring. Assisted in incident response and forensic analysis activities.",
       achievements: [
