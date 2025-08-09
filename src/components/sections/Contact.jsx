@@ -45,7 +45,7 @@ function Contact() {
               </div>
               <div className="method-info">
                 <h4>Phone</h4>
-                <p>+25412395869</p>
+                <p>+254112395869</p>
                 <span>Available 9 AM - 6 PM EST</span>
               </div>
             </div>

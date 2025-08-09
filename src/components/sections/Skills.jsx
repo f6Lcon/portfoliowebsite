@@ -46,7 +46,7 @@ function Skills() {
     "Social Engineering",
   ]
 
-  const frameworks = ["Node.js", "Express.js", "Django", "React"]
+  const frameworks = ["Node.js", "Express.js", "Django", "React", "Mertire Att&ck", "The Metasploit Framework"]
 
   const platforms = [
     { name: "HackerOne", type: "Bug Bounty", status: "Active Researcher - @f6Lcon" },

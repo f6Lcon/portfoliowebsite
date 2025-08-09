@@ -39,7 +39,7 @@ function Projects() {
       demoUrl: "#",
       githubUrl: "#",
       status: "In Progress",
-      date: "2024",
+      date: "2025",
     },
     {
       title: "Lipa na mpesa Secure API Gateway",
@@ -52,7 +52,7 @@ function Projects() {
       demoUrl: "#",
       githubUrl: "https://github.com/f6Lcon/mpesaAPI",
       status: "Completed",
-      date: "2023",
+      date: "2025",
     },
     {
       title: "MEDREF",
@@ -69,6 +69,21 @@ function Projects() {
       githubUrl: "https://github.com/f6Lcon/medref",
       status: "Completed",
       Date: "2025"
+    },
+    {
+      title: "tips101",
+      description: "Fully automated AI betting site prediction.",
+      image: "/tips101.png",
+      category: "Development",
+      technologies: ["React", "NodeJS", "ExpressJS", "MongoDB"],
+      features: [
+        "Realtime Analysis",
+        "Automated predictions",
+      ],
+      demoUrl: "https://tips101.com",
+      githubUrl: "https://github.com/f6Lcon/tips101",
+      Date: "2025"
+    
     },
   ]
 

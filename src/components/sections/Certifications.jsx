@@ -19,7 +19,7 @@ function Certifications() {
     {
       title: "OSCP - Offensive Security Certified Professional",
       issuer: "Offensive Security",
-      date: "2024",
+      date: "2026",
       credentialId: "OS-101337",
       icon: "🛡️",
       level: "Expert",
@@ -31,7 +31,7 @@ function Certifications() {
     {
       title: "CEH - Certified Ethical Hacker",
       issuer: "EC-Council",
-      date: "2023",
+      date: "2025",
       credentialId: "ECC-CEH-2023",
       icon: "🔒",
       level: "Intermediate",
@@ -43,7 +43,7 @@ function Certifications() {
     {
       title: "GPEN - GIAC Penetration Tester",
       issuer: "SANS Institute",
-      date: "2024",
+      date: "2025",
       credentialId: "GIAC-GPEN-2024",
       icon: "⚔️",
       level: "Advanced",
@@ -153,14 +153,14 @@ function Certifications() {
             <div className="upcoming-icon">📅</div>
             <div>
               <h4>CISSP - Certified Information Systems Security Professional</h4>
-              <p>Planned for Q2 2025</p>
+              <p>Planned for Q2 2027</p>
             </div>
           </div>
           <div className="upcoming-item">
             <div className="upcoming-icon">📅</div>
             <div>
               <h4>OSEP - Offensive Security Experienced Penetration Tester</h4>
-              <p>Planned for Q3 2025</p>
+              <p>Planned for Q3 2027</p>
             </div>
           </div>
         </div>
