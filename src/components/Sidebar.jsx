@@ -64,7 +64,7 @@ function Sidebar({ activeSection, setActiveSection, sidebarOpen, setSidebarOpen 
             <>
               <h3 className="profile-name">Muriithi Dennis</h3>
               <p className="profile-title">Cybersecurity Engineer</p>
-              <p className="profile-subtitle">Backend Developer</p>
+              <p className="profile-subtitle">Red Teamer</p>
 
               <div className="profile-social">
                 <a href="https://github.com/f6Lcon" target="_blank" rel="noreferrer" className="social-link">

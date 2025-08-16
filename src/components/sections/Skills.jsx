@@ -34,19 +34,17 @@ function Skills() {
   ]
 
   const specializations = [
-    "Web Application Security",
-    "Network Penetration Testing",
-    "Vulnerability Assessment",
-    "Bug Bounty Hunting",
-    "OSINT",
-    "Incident Response",
-    "Security Auditing",
-    "Threat Modeling",
-    "API Security Testing",
-    "Social Engineering",
+    "WebApp Pentesting",
+    "Network Pentesting",
+    "OSINT & RECON",
+    "Post Exploitation & Privilage Escalation",
+    "Scripting & Automation",
+    "Mobile Pentesting",
+    "Social Engineering"
+
   ]
 
-  const frameworks = ["Node.js", "Express.js", "Django", "React", "Mertire Att&ck", "The Metasploit Framework"]
+  const frameworks = ["Node.js", "Express.js", "Django", "React", "Mitre Att&ck", "The Metasploit Framework"]
 
   const platforms = [
     { name: "HackerOne", type: "Bug Bounty", status: "Active Researcher - @f6Lcon" },

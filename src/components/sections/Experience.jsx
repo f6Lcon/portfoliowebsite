@@ -20,19 +20,19 @@ function Experience() {
       technologies: ["JavaScript", "PHP", "Codigniter"],
     },
     {
-      title: "Junior Security Analyst",
+      title: "Junior Penetration Tester",
       company: "CyberGuard Systems",
       period: "2022 - 2023",
       location: "Remote",
       description:
-        "Performed vulnerability assessments and security monitoring. Assisted in incident response and forensic analysis activities.",
+        "Performed Web, Network and App penetration testing Gave detailed reports that helped the Blueteam stay ahed of malicious Hackers erned their Hall of Fame.",
       achievements: [
         "Conducted 100+ vulnerability assessments",
         "Participated in 20+ incident response cases",
         "Developed security monitoring scripts",
         "Achieved 99% uptime for security systems",
       ],
-      technologies: ["Bash", "Python", "Wireshark", "Nmap", "Splunk"],
+      technologies: ["Bash", "Python", "Wireshark", "Nmap", "Splunk", "metasploit", "Burpsuite", "maltego", "mitre Att&ck"],
     },
   ]
 

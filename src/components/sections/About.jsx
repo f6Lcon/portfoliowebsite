@@ -12,11 +12,11 @@ function About() {
             <h1 className="hero-title">
               Hi, I'm <span className="highlight">Muriithi Dennis.</span>
             </h1>
-            <h2 className="hero-subtitle">Cybersecurity Engineer & Backend Developer</h2>
+            <h2 className="hero-subtitle">Cybersecurity Engineer</h2>
             <p className="hero-description">
-              I am passionate about ethical hacking, penetration testing, and building secure applications. Experienced in
-              backend development with a focus on cybersecurity, bug bounty hunting, and hands-on security research
-              through various platforms.
+              I simulate hacker attacks on websites and give a report on vulnerabilities + fixes. This helps you prevent data breaches and fraud "Bounty is better than Ransom".
+              <br/>I am a Skilled  Red Teamer. 
+              <br />I use Arch Btw.   
             </p>
 
             <div className="hero-info">

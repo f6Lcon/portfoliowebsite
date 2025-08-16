@@ -82,6 +82,7 @@ function Projects() {
       ],
       demoUrl: "https://tips101.com",
       githubUrl: "https://github.com/f6Lcon/tips101",
+      status: "In Progress",
       Date: "2025"
     
     },
