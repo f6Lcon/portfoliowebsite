@@ -11,7 +11,7 @@ import Contact from "./sections/Contact"
 function Dashboard({ activeSection, sidebarOpen, setSidebarOpen }) {
   const getSectionTitle = () => {
     const titles = {
-      about: "About Me",
+      about: "About",
       experience: "Experience",
       skills: "Skills & Technologies",
       certifications: "Certifications",

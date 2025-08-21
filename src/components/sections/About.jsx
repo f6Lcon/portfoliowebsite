@@ -14,9 +14,9 @@ function About() {
             </h1>
             <h2 className="hero-subtitle">Cybersecurity Engineer</h2>
             <p className="hero-description">
-              I simulate hacker attacks on websites and give a report on vulnerabilities + fixes. This helps you prevent data breaches and fraud "Bounty is better than Ransom".
-              <br/>I am a Skilled  Red Teamer. 
-              <br />I use Arch Btw.   
+              Passionate cybersecurity professional and software engineer with expertise in ethical hacking, penetration testing, and full-stack development.
+              <br/>Dedicated to identifying vulnerabilities and strengthening digital defenses through comprehesive security assessments. Expirienced in web application security, network penetration testing, and modern development practices.
+              <br/>Running on Arch linux for maximum customization and control.  
             </p>
 
             <div className="hero-info">
@@ -42,14 +42,14 @@ function About() {
         <div className="about-card">
           <h3>Background</h3>
           <p>
-            I'm a dedicated cybersecurity professional and backend developer with expertise in ethical hacking,
-            penetration testing, and secure backend development. My journey combines technical excellence with a passion
-            for protecting digital assets and building robust security solutions.
+            I hold Bachelor of science in Information Technology (BSc IT) with specialization in programming from Karatina University. 
+          </p>
+          
+          <p> 
+            African Leadership Expirience (ALX) graduate, with a certificate in full-stack software engineering with specialization in Back-end development.
           </p>
           <p>
-            With extensive experience in bug bounty hunting on HackerOne and hands-on practice through VulnHub machines,
-            HTB labs, and TryHackMe challenges, I help organizations identify vulnerabilities and strengthen their
-            security posture through comprehensive assessments and modern development practices.
+            Certified Ethical Hacker with (CEH) certification from EC Council, with expertice in ethical hacking and penetration testing.
           </p>
         </div>
 
