@@ -1,21 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        // Professional Hacker Terminal Theme
-        "terminal-bg": "#000000",
-        "terminal-window": "#0a0a0a",
-        "terminal-header": "#1a1a1a",
-        "terminal-border": "#00ff00",
-        "terminal-green": "#00ff00",
-        "terminal-green-bright": "#00ff41",
-        "terminal-comment": "#008000",
-        "terminal-text": "#c0c0c0",
-
-        // Keep original shadcn colors for compatibility
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -50,19 +39,14 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        "open-sans": ["Open Sans", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        mono: ["Fira Code", "Source Code Pro", "Courier New", "monospace"],
-      },
-      animation: {
-        blink: "blink 1s infinite",
-        glitch: "glitch 0.3s infinite",
-        scanline: "scanline 3s linear infinite",
-        typing: "typing 2s steps(40, end)",
       },
     },
   },

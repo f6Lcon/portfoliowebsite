@@ -1,57 +1,22 @@
-"use client"
-
-import { useState, useEffect } from "react"
-import "./App.css"
-import Sidebar from "./components/Sidebar"
-import Dashboard from "./components/Dashboard"
+import { Routes, Route } from "react-router-dom"
+import Layout from "./components/Layout.jsx"
+import HomePage from "./pages/HomePage.jsx"
+import AboutPage from "./pages/AboutPage.jsx"
+import ProjectsPage from "./pages/ProjectsPage.jsx"
+import SkillsPage from "./pages/SkillsPage.jsx"
+import ContactPage from "./pages/ContactPage.jsx"
 
 function App() {
-  const [activeSection, setActiveSection] = useState("about")
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [sidebarOpen, setSidebarOpen] = useState(false)
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setActiveSection(sectionId)
-      setMobileMenuOpen(false)
-    }
-  }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["about", "experience", "skills", "certifications", "projects", "contact"]
-      const scrollPosition = window.scrollY + 100
-
-      for (const section of sections) {
-        const element = document.getElementById(section)
-        if (element) {
-          const offsetTop = element.offsetTop
-          const offsetHeight = element.offsetHeight
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section)
-            break
-          }
-        }
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
   return (
-    <div className="app-container">
-      <Sidebar
-        activeSection={activeSection}
-        setActiveSection={setActiveSection}
-        sidebarOpen={sidebarOpen}
-        setSidebarOpen={setSidebarOpen}
-      />
-      <Dashboard activeSection={activeSection} sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Layout>
   )
 }
 
