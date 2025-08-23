@@ -139,7 +139,7 @@ const SkillsPage = () => {
     { name: "BloodHound", category: "AD Enumeration" },
     { name: "OWASP ZAP", category: "Web Testing" },
     { name: "Nessus", category: "Vulnerability Scanning" },
-    { name: "Kali Linux", category: "Operating System" },
+    { name: "Arch Linux", category: "Operating System" },
     { name: "PowerShell Empire", category: "Post-Exploitation" },
     { name: "Ghidra", category: "Reverse Engineering" },
     { name: "John the Ripper", category: "Password Cracking" },
