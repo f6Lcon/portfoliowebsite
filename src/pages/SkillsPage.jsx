@@ -143,6 +143,13 @@ const SkillsPage = () => {
     { name: "PowerShell Empire", category: "Post-Exploitation" },
     { name: "Ghidra", category: "Reverse Engineering" },
     { name: "John the Ripper", category: "Password Cracking" },
+    { name: "SQLmap", category: "Web Testing" },
+    { name: "Tshark", category: "Network Analysis" },
+    { name: "Shodan", category: "OSINT" },
+    { name: "Bash", category: "Sctipting" },
+    { name: "Python", category: "Sctipting" },
+    { name: "Maltego", category: "OSINT" },
+
   ]
 
   return (

@@ -17,7 +17,8 @@ const AboutPage = () => {
     "OSCP - Offensive Security Certified Professional",
     "CISSP - Certified Information Systems Security Professional",
     "CEH - Certified Ethical Hacker",
-    "GCIH - GIAC Certified Incident Handler",
+    "ALX SWE - Certified Software Enfineer"
+  
   ]
 
   return (

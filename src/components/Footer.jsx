@@ -18,21 +18,8 @@ const Footer = () => {
           </div>
 
           <div className="text-center md:text-right">
-            <p className="text-muted-foreground mb-2">© 2024 Gray. All rights reserved.</p>
-            <div className="flex items-center justify-center md:justify-end space-x-2 text-muted-foreground text-sm">
-              <Code size={16} className="text-primary" />
-              <span>Built with React & Tailwind CSS</span>
-            </div>
+            <p className="text-muted-foreground mb-2">© 2025 Gray. All rights reserved.</p>
           </div>
-        </div>
-
-        <div className="mt-10 pt-8 border-t border-border text-center">
-          <p className="text-muted-foreground text-sm">
-            This portfolio showcases professional cybersecurity work conducted in authorized environments only.
-          </p>
-          <p className="text-primary text-xs mt-2 font-medium">
-            All penetration testing activities performed with explicit written authorization.
-          </p>
         </div>
       </div>
     </footer>

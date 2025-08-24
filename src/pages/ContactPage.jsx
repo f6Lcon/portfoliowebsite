@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send } from "lucide-react"
+import { Mail, MapPin, Linkedin, Github, Twitter, Send, X } from "lucide-react"
 import { useState } from "react"
 
 const ContactPage = () => {
@@ -29,14 +29,8 @@ const ContactPage = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "gray@cybersec.com",
-      href: "mailto:gray@cybersec.com",
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "ctrl1root@gmail.com",
+      href: "mailto:ctrl1root@gmail.com",
     },
     {
       icon: MapPin,
@@ -56,13 +50,13 @@ const ContactPage = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/gray-cybersec",
+      href: "https://github.com/f6Lcon",
       color: "hover:text-gray-400",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com/gray_cybersec",
+      href: "https://twitter.com/fa1con",
       color: "hover:text-blue-400",
     },
   ]
