@@ -26,7 +26,7 @@ const MatrixBackground = () => {
       ctx.fillStyle = "rgba(0, 0, 0, 0.04)"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      ctx.fillStyle = "#00ff41"
+      ctx.fillStyle = "#ff0000"
       ctx.font = font_size + "px arial"
 
       for (let i = 0; i < drops.length; i++) {

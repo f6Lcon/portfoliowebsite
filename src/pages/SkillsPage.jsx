@@ -139,32 +139,25 @@ const SkillsPage = () => {
     { name: "BloodHound", category: "AD Enumeration" },
     { name: "OWASP ZAP", category: "Web Testing" },
     { name: "Nessus", category: "Vulnerability Scanning" },
-    { name: "Arch Linux", category: "Operating System" },
+    { name: "Kali Linux", category: "Operating System" },
     { name: "PowerShell Empire", category: "Post-Exploitation" },
     { name: "Ghidra", category: "Reverse Engineering" },
     { name: "John the Ripper", category: "Password Cracking" },
-    { name: "SQLmap", category: "Web Testing" },
-    { name: "Tshark", category: "Network Analysis" },
-    { name: "Shodan", category: "OSINT" },
-    { name: "Bash", category: "Sctipting" },
-    { name: "Python", category: "Sctipting" },
-    { name: "Maltego", category: "OSINT" },
-
   ]
 
   return (
-    <div className="min-h-screen py-20 px-4">
+    <div className="h-full overflow-y-auto py-8 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Technical Skills
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Comprehensive expertise in offensive security, penetration testing, and cybersecurity operations.
           </p>
         </motion.div>
@@ -173,11 +166,11 @@ const SkillsPage = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="glass-morphism p-8 rounded-2xl mb-16"
+          className="glass-morphism p-6 rounded-2xl mb-8"
         >
-          <h2 className="text-3xl font-bold text-center mb-8 text-primary">Skills Assessment</h2>
+          <h2 className="text-2xl font-bold text-center mb-6 text-primary">Skills Assessment</h2>
           <div className="flex justify-center">
-            <canvas ref={canvasRef} width={800} height={400} className="max-w-full h-auto" />
+            <canvas ref={canvasRef} width={700} height={300} className="max-w-full h-auto" />
           </div>
         </motion.div>
 
@@ -185,22 +178,22 @@ const SkillsPage = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="glass-morphism p-8 rounded-2xl"
+          className="glass-morphism p-6 rounded-2xl"
         >
-          <h2 className="text-3xl font-bold text-center mb-8 text-primary">Security Tools & Technologies</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <h2 className="text-2xl font-bold text-center mb-6 text-primary">Security Tools & Technologies</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {tools.map((tool, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.05 * index }}
-                className="bg-card p-4 rounded-xl apple-hover text-center group"
+                className="bg-card p-3 rounded-xl apple-hover text-center group"
               >
-                <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-sm">
                   {tool.name}
                 </h3>
-                <p className="text-sm text-muted-foreground mt-1">{tool.category}</p>
+                <p className="text-xs text-muted-foreground mt-1">{tool.category}</p>
               </motion.div>
             ))}
           </div>
