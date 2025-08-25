@@ -6,74 +6,74 @@ import { ExternalLink, Shield, Bug, Network, Terminal, Target, Eye, Zap } from "
 const ProjectsPage = () => {
   const projects = [
     {
-      title: "Operation: CRIMSON SHADOW",
+      title: "Advanced Threat Simulation",
       description:
-        "Advanced Persistent Threat simulation targeting Fortune 500 financial institution. Multi-phase engagement including initial access, lateral movement, privilege escalation, and data exfiltration simulation.",
+        "Comprehensive penetration testing engagement targeting financial institution infrastructure. Multi-phase assessment including network reconnaissance, vulnerability analysis, and security control validation.",
       icon: Target,
-      tags: ["APT Simulation", "Financial Sector", "Multi-Vector Attack"],
-      status: "CLASSIFIED",
-      impact: "Complete domain compromise achieved in 72 hours",
-      threatLevel: "CRITICAL",
+      tags: ["Penetration Testing", "Financial Sector", "Security Assessment"],
+      status: "COMPLETED",
+      impact: "Identified 12 critical vulnerabilities",
+      threatLevel: "HIGH",
       duration: "6 weeks",
       scope: "3,000+ endpoints",
     },
     {
-      title: "Operation: DIGITAL PHANTOM",
+      title: "Healthcare Security Assessment",
       description:
-        "Red team assessment of healthcare network infrastructure focusing on medical device security, patient data protection, and HIPAA compliance validation through offensive security testing.",
+        "Security evaluation of healthcare network infrastructure focusing on medical device security, patient data protection, and HIPAA compliance validation through comprehensive testing.",
       icon: Shield,
-      tags: ["Healthcare Security", "IoMT Testing", "HIPAA Compliance"],
+      tags: ["Healthcare Security", "Medical Devices", "HIPAA Compliance"],
       status: "COMPLETED",
-      impact: "15 critical vulnerabilities in medical devices",
+      impact: "15 vulnerabilities in medical devices identified",
       threatLevel: "HIGH",
       duration: "4 weeks",
       scope: "500+ medical devices",
     },
     {
-      title: "Operation: GHOST PROTOCOL",
+      title: "Network Penetration Testing",
       description:
-        "Covert penetration testing of government contractor network using advanced evasion techniques, living-off-the-land tactics, and custom malware development.",
+        "Comprehensive penetration testing of enterprise network using advanced testing techniques, security control bypass methods, and custom security tool development.",
       icon: Eye,
-      tags: ["Government Sector", "Evasion Techniques", "Custom Malware"],
+      tags: ["Network Security", "Enterprise Testing", "Custom Tools"],
       status: "COMPLETED",
-      impact: "Bypassed all security controls undetected",
-      threatLevel: "CRITICAL",
+      impact: "Successfully bypassed multiple security layers",
+      threatLevel: "HIGH",
       duration: "8 weeks",
-      scope: "Classified",
+      scope: "Enterprise network",
     },
     {
-      title: "Operation: CYBER STORM",
+      title: "Infrastructure Security Testing",
       description:
-        "Large-scale red team exercise simulating nation-state attack patterns against critical infrastructure, including SCADA systems and industrial control networks.",
+        "Large-scale security assessment simulating advanced attack patterns against critical infrastructure, including industrial control systems and network security evaluation.",
       icon: Zap,
-      tags: ["Critical Infrastructure", "SCADA/ICS", "Nation-State TTPs"],
+      tags: ["Critical Infrastructure", "Industrial Systems", "Security Testing"],
       status: "COMPLETED",
-      impact: "Demonstrated potential for widespread disruption",
-      threatLevel: "CRITICAL",
+      impact: "Demonstrated security gaps in critical systems",
+      threatLevel: "HIGH",
       duration: "12 weeks",
       scope: "Multi-site infrastructure",
     },
     {
-      title: "Operation: SILENT BREACH",
+      title: "Web Application Security",
       description:
-        "Web application penetration testing focusing on zero-day discovery, custom exploit development, and business logic bypass techniques against e-commerce platform.",
+        "Comprehensive web application security testing focusing on vulnerability discovery, security flaw analysis, and business logic testing against e-commerce platform.",
       icon: Bug,
-      tags: ["Zero-Day Research", "E-commerce", "Custom Exploits"],
+      tags: ["Web Security", "E-commerce", "Vulnerability Research"],
       status: "ONGOING",
-      impact: "3 zero-day vulnerabilities discovered",
+      impact: "3 critical vulnerabilities discovered",
       threatLevel: "HIGH",
       duration: "Ongoing",
       scope: "Multi-million user platform",
     },
     {
-      title: "Operation: DARK NETWORK",
+      title: "Active Directory Assessment",
       description:
-        "Internal network penetration testing with focus on Active Directory compromise, Kerberos attacks, and domain controller exploitation in enterprise environment.",
+        "Internal network security testing with focus on Active Directory security, authentication system analysis, and domain security evaluation in enterprise environment.",
       icon: Network,
-      tags: ["Active Directory", "Kerberos Attacks", "Enterprise"],
+      tags: ["Active Directory", "Authentication Security", "Enterprise"],
       status: "COMPLETED",
-      impact: "Full AD forest compromise achieved",
-      threatLevel: "CRITICAL",
+      impact: "Complete security assessment of AD infrastructure",
+      threatLevel: "HIGH",
       duration: "3 weeks",
       scope: "10,000+ domain users",
     },
@@ -94,8 +94,6 @@ const ProjectsPage = () => {
 
   const getStatusColor = (status) => {
     switch (status) {
-      case "CLASSIFIED":
-        return "text-purple-400 border-purple-400/30 bg-purple-500/20"
       case "COMPLETED":
         return "text-green-400 border-green-400/30 bg-green-500/20"
       case "ONGOING":
@@ -106,33 +104,19 @@ const ProjectsPage = () => {
   }
 
   return (
-    <div className="min-h-screen py-8 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="space-y-8">
+      <div className="max-w-6xl mx-auto space-y-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center mb-8"
         >
-          <div className="glass-morphism p-4 mb-4">
-            <div className="flex items-center justify-center mb-2">
-              <Terminal className="w-5 h-5 text-primary mr-2" />
-              <span className="text-primary text-sm font-semibold">CLASSIFIED OPERATIONS DATABASE</span>
-            </div>
-            <div className="text-muted-foreground text-xs">
-              ACCESS LEVEL: RED TEAM OPERATOR
-              <br />
-              CLEARANCE: TOP SECRET//SI//TK
-              <br />
-              COMPARTMENT: CYBER OPERATIONS
-            </div>
-          </div>
-
           <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Operation Portfolio
+            Security Projects
           </h1>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-            Classified red team engagements and offensive cyber operations
+            Professional cybersecurity assessments and penetration testing engagements
           </p>
         </motion.div>
 
@@ -192,7 +176,7 @@ const ProjectsPage = () => {
                 </div>
 
                 <div className="border-t border-border pt-4 mt-auto">
-                  <p className="text-sm text-primary mb-2 font-semibold">Operation Impact:</p>
+                  <p className="text-sm text-primary mb-2 font-semibold">Project Impact:</p>
                   <p className="text-accent font-semibold text-sm">{project.impact}</p>
                 </div>
               </motion.div>
@@ -208,14 +192,14 @@ const ProjectsPage = () => {
         >
           <div className="glass-morphism p-8 rounded-2xl">
             <Terminal className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h2 className="text-2xl font-bold mb-4 text-primary">Initiate Security Assessment</h2>
+            <h2 className="text-2xl font-bold mb-4 text-primary">Start Security Assessment</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Ready to test your defenses against advanced persistent threats?
+              Ready to evaluate your security posture with professional penetration testing?
               <br />
-              Contact for classified engagement briefing
+              Contact for consultation and project planning
             </p>
             <button className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold apple-hover cyber-glow group">
-              Establish Secure Channel
+              Get In Touch
               <ExternalLink className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>

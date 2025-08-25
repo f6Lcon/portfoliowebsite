@@ -1,17 +1,10 @@
-import FloatingNavbar from "./FloatingNavbar"
-import MatrixBackground from "./MatrixBackground"
-import Footer from "./Footer"
+import Navbar from "./Navbar"
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-background text-foreground flex">
-      <MatrixBackground />
-      <FloatingNavbar />
-
-      <main className="relative z-10 flex-1 ml-64 overflow-y-auto">
-        {children}
-        <Footer />
-      </main>
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
+      <main className="container mx-auto px-4 py-8">{children}</main>
     </div>
   )
 }

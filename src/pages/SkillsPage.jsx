@@ -6,7 +6,6 @@ import { Terminal, Shield, Zap, Target, Eye, Lock } from "lucide-react"
 
 const SkillsPage = () => {
   const canvasRef = useRef(null)
-  const [terminalText, setTerminalText] = useState("")
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)
 
   const redTeamSkills = [
@@ -34,46 +33,6 @@ const SkillsPage = () => {
     { name: "Mimikatz", category: "Credential Dumping", threat: "CRITICAL" },
     { name: "PowerShell Empire", category: "Living off Land", threat: "HIGH" },
   ]
-
-  useEffect(() => {
-    const commands = [
-      "root@redteam:~# nmap -sS -O target.corp.com",
-      "root@redteam:~# msfconsole -q",
-      "root@redteam:~# use exploit/windows/smb/ms17_010_eternalblue",
-      "root@redteam:~# set RHOSTS 192.168.1.0/24",
-      "root@redteam:~# exploit -j",
-      "root@redteam:~# sessions -l",
-      "root@redteam:~# use post/windows/gather/hashdump",
-      "root@redteam:~# run",
-    ]
-
-    let currentCommand = 0
-    let currentChar = 0
-
-    const typeCommand = () => {
-      if (currentCommand < commands.length) {
-        if (currentChar < commands[currentCommand].length) {
-          setTerminalText((prev) => prev + commands[currentCommand][currentChar])
-          currentChar++
-          setTimeout(typeCommand, 50)
-        } else {
-          setTerminalText((prev) => prev + "\n")
-          currentCommand++
-          currentChar = 0
-          setTimeout(typeCommand, 1000)
-        }
-      } else {
-        setTimeout(() => {
-          setTerminalText("")
-          currentCommand = 0
-          currentChar = 0
-          typeCommand()
-        }, 3000)
-      }
-    }
-
-    typeCommand()
-  }, [])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -140,29 +99,14 @@ const SkillsPage = () => {
   }, [])
 
   return (
-    <div className="min-h-screen py-8 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="space-y-8">
+      <div className="max-w-6xl mx-auto space-y-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center mb-6"
         >
-          <div className="glass-morphism p-4 mb-4 font-mono">
-            <div className="flex items-center mb-2">
-              <div className="flex space-x-1">
-                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              </div>
-              <span className="ml-3 text-primary text-xs">RED TEAM OPERATOR - SKILLS MATRIX</span>
-            </div>
-            <div className="text-left text-primary whitespace-pre-wrap text-xs">
-              {terminalText}
-              <span className="animate-pulse">█</span>
-            </div>
-          </div>
-
           <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Red Team Skills
           </h1>
