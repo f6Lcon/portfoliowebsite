@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, MapPin, Linkedin, Github, Twitter, Send, X } from "lucide-react"
+import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send } from "lucide-react"
 import { useState } from "react"
 
 const ContactPage = () => {
@@ -29,8 +29,14 @@ const ContactPage = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "ctrl1root@gmail.com",
-      href: "mailto:ctrl1root@gmail.com",
+      value: "gray@cybersec.com",
+      href: "mailto:gray@cybersec.com",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+1 (555) 123-4567",
+      href: "tel:+15551234567",
     },
     {
       icon: MapPin,
@@ -50,19 +56,19 @@ const ContactPage = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/f6Lcon",
+      href: "https://github.com/gray-cybersec",
       color: "hover:text-gray-400",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com/fa1con",
+      href: "https://twitter.com/gray_cybersec",
       color: "hover:text-blue-400",
     },
   ]
 
   return (
-    <div className="min-h-screen py-20 px-4">
+    <div className="min-h-screen py-8 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

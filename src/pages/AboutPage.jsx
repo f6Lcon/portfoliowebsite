@@ -21,7 +21,7 @@ const AboutPage = () => {
   ]
 
   return (
-    <div className="h-full overflow-y-auto py-8 px-4">
+    <div className="min-h-screen py-8 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

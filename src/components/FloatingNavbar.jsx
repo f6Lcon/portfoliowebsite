@@ -42,7 +42,7 @@ const FloatingNavbar = () => {
       </div>
 
       <div className="p-4 border-t border-border/20">
-        <p className="text-xs text-muted-foreground text-center">© 2024 Gray Portfolio</p>
+        <p className="text-xs text-muted-foreground text-center">© 2025 Gray Portfolio</p>
       </div>
     </nav>
   )

@@ -4,11 +4,11 @@ import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   return (
-    <div className="h-screen bg-background text-foreground overflow-hidden flex">
+    <div className="min-h-screen bg-background text-foreground flex">
       <MatrixBackground />
       <FloatingNavbar />
 
-      <main className="relative z-10 flex-1 ml-64 h-full overflow-hidden">
+      <main className="relative z-10 flex-1 ml-64 overflow-y-auto">
         {children}
         <Footer />
       </main>

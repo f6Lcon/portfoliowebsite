@@ -6,8 +6,8 @@ import { Link } from "react-router-dom"
 
 const HomePage = () => {
   return (
-    <div className="h-full flex flex-col justify-center px-6 py-4">
-      <div className="max-w-5xl mx-auto text-center flex-1 flex flex-col justify-center">
+    <div className="min-h-screen py-8 px-6">
+      <div className="max-w-6xl mx-auto text-center flex-1 flex flex-col justify-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
