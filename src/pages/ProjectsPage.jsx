@@ -228,16 +228,21 @@ const ProjectsPage = () => {
         >
           <div className="glass-morphism p-8 rounded-2xl">
             <Terminal className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h2 className="text-2xl font-bold mb-4 text-primary">Start Security Assessment</h2>
+            <h2 className="text-2xl font-bold mb-4 text-primary">Collaboration & Networking</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Ready to evaluate your security posture with professional penetration testing?
+              Connect with me on Discord for cybersecurity discussions, collaboration opportunities,
               <br />
-              Contact for consultation and project planning
+              and professional networking in the red team community
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold apple-hover cyber-glow group">
+            <a
+              href="https://discordapp.com/users/1106104232949600308"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold apple-hover cyber-glow group"
+            >
               Discord
               <ExternalLink className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
