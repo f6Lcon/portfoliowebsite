@@ -1,7 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { ExternalLink, Shield, Bug, Network, Terminal, Target, Eye, Zap } from "lucide-react"
+import { ExternalLink, Shield, Bug, Network, Terminal, Target, Eye, Zap, Code } from "lucide-react"
 
 const ProjectsPage = () => {
   const projects = [
@@ -77,7 +76,44 @@ const ProjectsPage = () => {
       duration: "3 weeks",
       scope: "10,000+ domain users",
     },
+    {
+      title: "MEDREF",
+      description:
+        "Medical Referral Appointment System created to streamline and simplify the manual referral systems in hospitals",
+      icon: Code,
+      tags: ["Backend Development", "API Security", "Code"],
+      status: "COMPLETED",
+      impact: "Completed the Automation referral",
+      threatLevel: "HIGH",
+      duration: "4 months",
+      scope: "Software Development",
+    },
+    {
+      title: "Lipa na Mpesa API",
+      description:
+        "Creted a lipa na mpesa API gateway to streamline online paments through mobile platforms",
+      icon: Code,
+      tags: ["Backend Development", "API Security", "Code"],
+      status: "COMPLETED",
+      impact: "OWASP top 10 best practices implementation",
+      threatLevel: "HIGH",
+      duration: "2 months",
+      scope: "Software Development",
+    },
+    {
+      title: "Scripting",
+      description:
+        "Creating custom Burp extentions effective web exploitation and enumeration, custom Maltego transforms for effective OSINT",
+      icon: Code,
+      tags: ["Scripting", "Automation"],
+      status: "ONGOING",
+      impact: "Vulnrebilities Discloser, Skills Gain",
+      threatLevel: "MEDIUM",
+      duration: "3 months",
+      scope: "Ongoing",
+    },
   ]
+
 
   const getThreatColor = (level) => {
     switch (level) {
@@ -106,7 +142,7 @@ const ProjectsPage = () => {
   return (
     <div className="space-y-8">
       <div className="max-w-6xl mx-auto space-y-8">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -118,13 +154,13 @@ const ProjectsPage = () => {
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Professional cybersecurity assessments and penetration testing engagements
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-8">
           {projects.map((project, index) => {
             const Icon = project.icon
             return (
-              <motion.div
+              <div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -179,12 +215,12 @@ const ProjectsPage = () => {
                   <p className="text-sm text-primary mb-2 font-semibold">Project Impact:</p>
                   <p className="text-accent font-semibold text-sm">{project.impact}</p>
                 </div>
-              </motion.div>
+              </div>
             )
           })}
         </div>
 
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -199,11 +235,11 @@ const ProjectsPage = () => {
               Contact for consultation and project planning
             </p>
             <button className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold apple-hover cyber-glow group">
-              Get In Touch
+              Discord
               <ExternalLink className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   )

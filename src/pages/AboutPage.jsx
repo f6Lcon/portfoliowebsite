@@ -1,6 +1,4 @@
-"use client"
 
-import { motion } from "framer-motion"
 import { Shield, Award, Code, Target, Users, Zap } from "lucide-react"
 
 const AboutPage = () => {
@@ -17,28 +15,28 @@ const AboutPage = () => {
     "OSCP - Offensive Security Certified Professional",
     "CISSP - Certified Information Systems Security Professional",
     "CEH - Certified Ethical Hacker",
-    "GCIH - GIAC Certified Incident Handler",
+    "ALX SWE - Certified Software Engineer"
   ]
 
   return (
     <div className="min-h-screen py-8 px-6">
       <div className="max-w-6xl mx-auto">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center mb-8"
         >
           <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            About Gray
+            About GRAY
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Cybersecurity professional with 8+ years of experience in offensive security, penetration testing, and red
+            Cybersecurity Engineer with 4+ years of experience in offensive security, penetration testing, and red
             team operations.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -49,7 +47,7 @@ const AboutPage = () => {
             <p className="text-muted-foreground mb-3 text-sm">
               Specialized in offensive security operations with extensive experience in penetration testing,
               vulnerability assessment, and cyber operations across various industries including finance, healthcare,
-              and government sectors.
+              and business sectors.
             </p>
             <p className="text-muted-foreground text-sm">
               Passionate about staying ahead of emerging threats and developing innovative security solutions to protect
@@ -68,9 +66,9 @@ const AboutPage = () => {
               ))}
             </ul>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -80,7 +78,7 @@ const AboutPage = () => {
             {skills.map((skill, index) => {
               const Icon = skill.icon
               return (
-                <motion.div
+                <div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -90,11 +88,11 @@ const AboutPage = () => {
                   <Icon className="w-8 h-8 text-primary mb-2 mx-auto" />
                   <h3 className="text-lg font-semibold mb-1">{skill.title}</h3>
                   <p className="text-muted-foreground text-sm">{skill.description}</p>
-                </motion.div>
+                </div>
               )
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   )

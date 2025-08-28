@@ -1,6 +1,4 @@
-"use client"
 
-import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { Terminal, Shield, Zap, Target, Eye, Lock } from "lucide-react"
 
@@ -15,7 +13,7 @@ const SkillsPage = () => {
     { name: "EXPLOITATION", level: 95, icon: Lock, color: "#ffbf00" },
     { name: "INSTALLATION", level: 92, icon: Shield, color: "#80ff00" },
     { name: "C2 OPERATIONS", level: 94, icon: Terminal, color: "#00ff80" },
-    { name: "ACTIONS ON OBJECTIVES", level: 90, icon: Target, color: "#00ffff" },
+    { name: "(AOO)", level: 80, icon: Target, color: "#00ffff" },
     { name: "PERSISTENCE", level: 87, icon: Lock, color: "#0080ff" },
   ]
 
@@ -24,7 +22,7 @@ const SkillsPage = () => {
     { name: "Cobalt Strike", category: "C2 Framework", threat: "CRITICAL" },
     { name: "BloodHound", category: "AD Enumeration", threat: "HIGH" },
     { name: "Empire/Starkiller", category: "Post-Exploitation", threat: "HIGH" },
-    { name: "Burp Suite Pro", category: "Web Application", threat: "MEDIUM" },
+    { name: "Burp Suite", category: "Web Application", threat: "MEDIUM" },
     { name: "Nmap/Masscan", category: "Network Discovery", threat: "LOW" },
     { name: "Wireshark", category: "Traffic Analysis", threat: "LOW" },
     { name: "Hashcat", category: "Password Cracking", threat: "MEDIUM" },
@@ -32,6 +30,14 @@ const SkillsPage = () => {
     { name: "Responder", category: "Network Poisoning", threat: "HIGH" },
     { name: "Mimikatz", category: "Credential Dumping", threat: "CRITICAL" },
     { name: "PowerShell Empire", category: "Living off Land", threat: "HIGH" },
+    { name: "Python", category: "Scripting", threat: "HIGH"},
+    { name: "Bash", category: "Scripting", threat: "MEDIUM"},
+    { name: "Maltego", category: "OSINT", threat: "HIGH"},
+    { name: "Postman", category: "API Analysis", threat: "LOW"},
+    { name: "Mitre Att&ck", category: "Framework", threat: "HIGH"},
+    { name: "Arch Linux", category: "Operating System", threat: "HIGH"},
+    { name: "Vim", category: "Text Editor", threat: "MEDIUM"},
+    { name: "Gophish", category: "Phishing", threat: "HIGH"},
   ]
 
   useEffect(() => {
@@ -101,7 +107,7 @@ const SkillsPage = () => {
   return (
     <div className="space-y-8">
       <div className="max-w-6xl mx-auto space-y-8">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -113,9 +119,9 @@ const SkillsPage = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Offensive security capabilities and attack vectors
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -143,18 +149,18 @@ const SkillsPage = () => {
               )
             })}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="glass-morphism p-6 rounded-2xl"
         >
-          <h2 className="text-xl font-bold text-center mb-6 text-primary">Arsenal & Toolchain</h2>
+          <h2 className="text-xl font-bold text-center mb-6 text-primary">Tools, Technologies & Frameworks</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {hackingTools.map((tool, index) => (
-              <motion.div
+              <div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -180,10 +186,10 @@ const SkillsPage = () => {
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs">{tool.category}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   )

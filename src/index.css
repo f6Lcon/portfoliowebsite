@@ -10,7 +10,6 @@
 }
 
 :root {
-  /* Updated to Darknet Diaries black and red theme */
   --background: 0 0% 0%; /* Pure black background */
   --foreground: 0 0% 100%; /* Pure white text */
   --card: 220 13% 8%; /* Very dark gray cards */
