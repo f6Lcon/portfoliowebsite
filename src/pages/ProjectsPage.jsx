@@ -103,7 +103,7 @@ const ProjectsPage = () => {
     {
       title: "Scripting",
       description:
-        "Creating custom Burp extentions effective web exploitation and enumeration, custom Maltego transforms for effective OSINT",
+        "Creating custom Burp extentions for effective web exploitation and enumeration, custom Maltego transforms for effective OSINT",
       icon: Code,
       tags: ["Scripting", "Automation"],
       status: "ONGOING",
@@ -230,7 +230,7 @@ const ProjectsPage = () => {
             <Terminal className="w-12 h-12 text-primary mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4 text-primary">Collaboration & Networking</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Connect with me on Discord for cybersecurity discussions, collaboration opportunities,
+              Connect with me for cybersecurity discussions, CTF tournaments,
               <br />
               and professional networking in the red team community
             </p>
@@ -240,8 +240,8 @@ const ProjectsPage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold apple-hover cyber-glow group"
             >
-              Discord
-              <ExternalLink className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Get In Touch
+              <ExternalLink className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
