@@ -28,7 +28,7 @@ const AboutPage = () => {
           className="text-center mb-8"
         >
           <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            About GRAY
+            About Gray
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Cybersecurity Engineer with 4+ years of experience in offensive security, penetration testing, and red

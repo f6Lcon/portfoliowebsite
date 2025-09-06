@@ -38,6 +38,7 @@ const SkillsPage = () => {
     { name: "Arch Linux", category: "Operating System", threat: "HIGH"},
     { name: "Vim", category: "Text Editor", threat: "MEDIUM"},
     { name: "Gophish", category: "Phishing", threat: "HIGH"},
+    { name: "LaZagne", category: "Credential Access", threat: "HIGH"},
   ]
 
   useEffect(() => {
