@@ -12,10 +12,8 @@ const AboutPage = () => {
   ]
 
   const certifications = [
-    "OSCP - Offensive Security Certified Professional",
-    "CISSP - Certified Information Systems Security Professional",
     "CEH - Certified Ethical Hacker",
-    "ALX SWE - Certified Software Engineer"
+    "ALX SWE - Certified Software Engineer",
   ]
 
   return (
