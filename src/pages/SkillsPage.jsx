@@ -39,6 +39,7 @@ const SkillsPage = () => {
     { name: "Vim", category: "Text Editor", threat: "MEDIUM"},
     { name: "Gophish", category: "Phishing", threat: "HIGH"},
     { name: "LaZagne", category: "Credential Access", threat: "HIGH"},
+    { name: "C", category: "Exploit Development", threat: "CRITICAL"},
   ]
 
   useEffect(() => {

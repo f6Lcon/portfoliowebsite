@@ -14,6 +14,7 @@ const AboutPage = () => {
   const certifications = [
     "CEH - Certified Ethical Hacker",
     "ALX SWE - Certified Software Engineer",
+    "BsC. Information Technology - Programmer"
   ]
 
   return (
